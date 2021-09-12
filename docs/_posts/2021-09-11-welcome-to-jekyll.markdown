@@ -310,3 +310,4 @@ skills:
 ```
 
 The output looks like the following PDF:
+[Peter Kratz Resume]({% link {{site.baseurl}}/assets/pdfs/Peter_Kratz_Resume.pdf %})
