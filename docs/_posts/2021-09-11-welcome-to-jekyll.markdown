@@ -45,8 +45,8 @@ This has two key benefits benefits:
  %   showframe,          % Uncomment to show how the type block is set on the page
 }
 
-\newcommand*{\trim}[1]{%
-  \trim@spaces@noexp{#1}%
+\newcommand*{\trim}[1]{
+  \trim@spaces@noexp{#1}
 }
 
 % Name
