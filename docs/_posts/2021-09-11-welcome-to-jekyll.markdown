@@ -309,6 +309,5 @@ skills:
 ---
 ```
 
-The output looks like the following PDF:
+You can view the output in the following PDF:
 [Peter Kratz Resume]({{ site.baseurl }}/assets/pdfs/Peter_Kratz_Resume.pdf)
-<object data="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Peter_Kratz_Resume.pdf" width="1000" height="1000" type="application/pdf"></object>
