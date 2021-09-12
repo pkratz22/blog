@@ -18,6 +18,14 @@ This has two key benefits benefits:
 - The content created will still be a nicely formatted PDF from LaTeX, which gives the creator more control over every aspect of the document and provides consistent and crisp results.
 - It is very simple to add or remove parts to the resume, just add or remove content from the YAML file without having to adjust the LaTeX each time.
 
+Here is the class file. There is not too much to note, but here are the key features:
+- Required packages
+- Defined paper dimensions - used standard letterpaper with 1 inch margins since I am based in the US
+- Defined formatting for name and contact information
+- Defined formatting for education fields
+- Defined formatting for skills section
+- Defined formatting of section titles
+
 ```
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cv-class}[2021/09/07 My custom CV class]
@@ -28,10 +36,6 @@ This has two key benefits benefits:
 % So can customize section headings
 \RequirePackage{titlesec}
 
-% For columns to align top
-%\usepackage{adjustbox}
-% use: \adjustbox{valign=t}{\begin{minipage}[t]{0.2\textwidth} \end{minipage}}%
-
 % Sets margins
 \RequirePackage{geometry}
 \geometry{
@@ -41,12 +45,7 @@ This has two key benefits benefits:
     top       = 1in,         % Top margin % 1in is standard
     bottom    = 1in,         % Bottom margin %1in is standard
     marginpar = 0in,
- %   bindingoffset=.5cm, % Binding offset
  %   showframe,          % Uncomment to show how the type block is set on the page
-}
-
-\newcommand*{\trim}[1]{
-  \trim@spaces@noexp{#1}
 }
 
 % Name
