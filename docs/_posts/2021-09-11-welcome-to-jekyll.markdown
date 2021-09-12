@@ -310,4 +310,4 @@ skills:
 ```
 
 The output looks like the following PDF:
-[Link to a file]({% link /resources/pdfs/Peter_Kratz_Resume.pdf %})
+{% link /assets/pdfs/Peter_Kratz_Resume.pdf %}
