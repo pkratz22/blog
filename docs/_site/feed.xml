@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-09-11T23:15:57-04:00</updated><id>/feed.xml</id><title type="html">The Peter Kratz Blog</title><subtitle>The musings of Peter Kratz. Music, data, sustainability, urban development, birds, puzzles, et cetera.</subtitle><entry><title type="html">Modular LaTeX Resume</title><link href="/professional/2021/09/11/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Modular LaTeX Resume" /><published>2021-09-11T22:05:31-04:00</published><updated>2021-09-11T22:05:31-04:00</updated><id>/professional/2021/09/11/welcome-to-jekyll</id><content type="html" xml:base="/professional/2021/09/11/welcome-to-jekyll.html">&lt;p&gt;The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.&lt;/p&gt;
+
+&lt;p&gt;This project required creating four files:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;.cls class file&lt;/li&gt;
+  &lt;li&gt;.yml content file&lt;/li&gt;
+  &lt;li&gt;.tex design template file&lt;/li&gt;
+  &lt;li&gt;makefile&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By properly defining the desired layout of the resume in the LaTeX template and cls class files, the user can define what content they want in their resume in the YAML file and then run the makefile to update their resume.&lt;/p&gt;
+
+&lt;p&gt;This has two key benefits benefits:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The content created will still be a nicely formatted PDF from LaTeX, which gives the creator more control over every aspect of the document and provides consistent and crisp results.&lt;/li&gt;
+  &lt;li&gt;It is very simple to add or remove parts to the resume, just add or remove content from the YAML file without having to adjust the LaTeX each time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;First, let’s take a look at the .cls class file&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="professional" /><summary type="html">The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.</summary></entry></feed>
