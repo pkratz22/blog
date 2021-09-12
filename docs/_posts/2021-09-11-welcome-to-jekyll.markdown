@@ -310,4 +310,4 @@ skills:
 ```
 
 The output looks like the following PDF:
-<object data="{{ site.url }}{{ site.baseurl }}/_resources/pdfs/Peter_Kratz_Resume.pdf" width="1000" height="1000" type="application/pdf"></object>
+<object data="{{ site.url }}{{ site.baseurl }}/docs/_resources/pdfs/Peter_Kratz_Resume.pdf" width="1000" height="1000" type="application/pdf"></object>
