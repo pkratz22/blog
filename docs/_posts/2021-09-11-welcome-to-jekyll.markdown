@@ -310,4 +310,4 @@ skills:
 ```
 
 The output looks like the following PDF:
- {% pdf "/resources/pdfs/Peter_Kratz_Resume.pdf" %}
+`{% pdf "/resources/pdfs/Peter_Kratz_Resume.pdf" %}`
