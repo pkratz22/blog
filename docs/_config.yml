@@ -1,7 +1,7 @@
 title: The Peter Kratz Blog
 email: pkratz22@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The musings of Peter Kratz. Music, data, sustainability, urban development, birds, puzzles, et cetera.
+  The musings of Peter Kratz. <br> Music, data, sustainability, urban development, birds, puzzles, et cetera.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "pkratz22.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
