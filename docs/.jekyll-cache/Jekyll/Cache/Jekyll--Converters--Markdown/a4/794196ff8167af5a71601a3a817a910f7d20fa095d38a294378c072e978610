@@ -1,32 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="pkratz22.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="pkratz22.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-09-16T02:52:45-04:00</updated><id>pkratz22.github.io/blog/feed.xml</id><title type="html">The Peter Kratz Blog</title><subtitle>The musings of Peter Kratz.  Music, data, sustainability, urban development, birds, puzzles, et cetera.</subtitle><entry><title type="html">Modular LaTeX Resume</title><link href="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html" rel="alternate" type="text/html" title="Modular LaTeX Resume" /><published>2021-09-11T22:05:31-04:00</published><updated>2021-09-11T22:05:31-04:00</updated><id>pkratz22.github.io/blog/professional/2021/09/11/modular_resume</id><content type="html" xml:base="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html">&lt;p&gt;The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.&lt;/p&gt;
+I"¨5<p>The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.</p>
 
-&lt;p&gt;This project required creating four files:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;.cls class file&lt;/li&gt;
-  &lt;li&gt;.yml content file&lt;/li&gt;
-  &lt;li&gt;.tex design template file&lt;/li&gt;
-  &lt;li&gt;makefile&lt;/li&gt;
-&lt;/ul&gt;
+<p>This project required creating four files:</p>
+<ul>
+  <li>.cls class file</li>
+  <li>.yml content file</li>
+  <li>.tex design template file</li>
+  <li>makefile</li>
+</ul>
 
-&lt;p&gt;By properly defining the desired layout of the resume in the LaTeX template and cls class files, the user can define what content they want in their resume in the YAML file and then run the makefile to update their resume.&lt;/p&gt;
+<p>By properly defining the desired layout of the resume in the LaTeX template and cls class files, the user can define what content they want in their resume in the YAML file and then run the makefile to update their resume.</p>
 
-&lt;p&gt;This has two key benefits benefits:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;The content created will still be a nicely formatted PDF from LaTeX, which gives the creator more control over every aspect of the document and provides consistent and crisp results.&lt;/li&gt;
-  &lt;li&gt;It is very simple to add or remove parts to the resume, just add or remove content from the YAML file without having to adjust the LaTeX each time.&lt;/li&gt;
-&lt;/ul&gt;
+<p>This has two key benefits benefits:</p>
+<ul>
+  <li>The content created will still be a nicely formatted PDF from LaTeX, which gives the creator more control over every aspect of the document and provides consistent and crisp results.</li>
+  <li>It is very simple to add or remove parts to the resume, just add or remove content from the YAML file without having to adjust the LaTeX each time.</li>
+</ul>
 
-&lt;p&gt;The class file handles the following:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;(Some of the) Required packages&lt;/li&gt;
-  &lt;li&gt;Defined paper dimensions - used standard letterpaper with 1 inch margins since I am based in the US&lt;/li&gt;
-  &lt;li&gt;Defined formatting for name and contact information&lt;/li&gt;
-  &lt;li&gt;Defined formatting for education fields&lt;/li&gt;
-  &lt;li&gt;Defined formatting for skills section&lt;/li&gt;
-  &lt;li&gt;Defined formatting of section titles&lt;/li&gt;
-&lt;/ul&gt;
+<p>The class file handles the following:</p>
+<ul>
+  <li>(Some of the) Required packages</li>
+  <li>Defined paper dimensions - used standard letterpaper with 1 inch margins since I am based in the US</li>
+  <li>Defined formatting for name and contact information</li>
+  <li>Defined formatting for education fields</li>
+  <li>Defined formatting for skills section</li>
+  <li>Defined formatting of section titles</li>
+</ul>
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\NeedsTeXFormat{LaTeX2e}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cv-class}[2021/09/07 My custom CV class]
 
 % Base class on article
@@ -73,32 +73,32 @@
   [\titlerule]                 % Inserts a horizontal line after the heading
 
 \titlespacing{\section}{0em}{0em}{2pt} % left spacing, before spacing, after spacing
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</code></pre></div></div>
 
-&lt;p&gt;The LaTeX file handles the following:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;(Some of the) Required Packages&lt;/li&gt;
-  &lt;li&gt;File metadata for PDF Resume including:
-    &lt;ul&gt;
-      &lt;li&gt;Author&lt;/li&gt;
-      &lt;li&gt;Title&lt;/li&gt;
-      &lt;li&gt;Language&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Defining the formatting for each area of the resume, which in my case is:
-    &lt;ul&gt;
-      &lt;li&gt;Contact information&lt;/li&gt;
-      &lt;li&gt;Work experience&lt;/li&gt;
-      &lt;li&gt;Internships&lt;/li&gt;
-      &lt;li&gt;Competitions / Projects&lt;/li&gt;
-      &lt;li&gt;Leadership / Activities&lt;/li&gt;
-      &lt;li&gt;Education&lt;/li&gt;
-      &lt;li&gt;Skills&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+<p>The LaTeX file handles the following:</p>
+<ul>
+  <li>(Some of the) Required Packages</li>
+  <li>File metadata for PDF Resume including:
+    <ul>
+      <li>Author</li>
+      <li>Title</li>
+      <li>Language</li>
+    </ul>
+  </li>
+  <li>Defining the formatting for each area of the resume, which in my case is:
+    <ul>
+      <li>Contact information</li>
+      <li>Work experience</li>
+      <li>Internships</li>
+      <li>Competitions / Projects</li>
+      <li>Leadership / Activities</li>
+      <li>Education</li>
+      <li>Skills</li>
+    </ul>
+  </li>
+</ul>
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\documentclass[11pt]{cv-class}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\documentclass[11pt]{cv-class}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -207,11 +207,11 @@ $for(skills)$
 $endfor$
 
 \end{document}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</code></pre></div></div>
 
-&lt;p&gt;The makefile looks as follows:&lt;/p&gt;
+<p>The makefile looks as follows:</p>
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#----------------------
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#----------------------
 # CONSTANTS
 #----------------------
 TEMPLATE=cv-template
@@ -234,10 +234,10 @@ clean-all:
 
 clean:
 	rm -f *.log *.aux *.out
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</code></pre></div></div>
 
-&lt;p&gt;Then, the content is added to the YAML file:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+<p>Then, the content is added to the YAML file:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
 version: 2020-09-14
 
 meta:
@@ -322,15 +322,16 @@ skills:
     skill1: Zoho CRM
     skill2: Salesforce CRM
 ---
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</code></pre></div></div>
 
-&lt;p&gt;You can view the output in the following PDF:
-&lt;a href=&quot;/blog/assets/pdfs/Peter_Kratz_Resume.pdf&quot;&gt;Peter Kratz Resume&lt;/a&gt;&lt;/p&gt;
+<p>You can view the output in the following PDF:
+<a href="/blog/assets/pdfs/Peter_Kratz_Resume.pdf">Peter Kratz Resume</a></p>
 
-&lt;p&gt;You can find the source files for cv-class.cls, cv-template.tex, cv-data.yml, and makefile below:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/cv-class.cls&quot;&gt;cv-class.cls&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/cv-template.tex&quot;&gt;cv-template.tex&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/cv-data.yml&quot;&gt;cv-data.yml&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/makefile&quot;&gt;makefile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="professional" /><summary type="html">The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.</summary></entry></feed>
+<p>You can find the source files for cv-class.cls, cv-template.tex, cv-data.yml, and makefile below:</p>
+<ul>
+  <li><a href="/blog/assets/modular_resume_source/cv-class.cls">cv-class.cls</a></li>
+  <li><a href="/blog/assets/modular_resume_source/cv-template.tex">cv-template.tex</a></li>
+  <li><a href="/blog/assets/modular_resume_source/cv-data.yml">cv-data.yml</a></li>
+  <li><a href="/blog/assets/modular_resume_source/makefile">makefile</a></li>
+</ul>
+:ET

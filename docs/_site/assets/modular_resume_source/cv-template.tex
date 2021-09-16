@@ -1,0 +1,109 @@
+\documentclass[11pt]{cv-class}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\hypersetup{pdfauthor={$meta.author$},
+            pdftitle={$meta.title$},
+            pdflang={$meta.language$}
+            }
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+% *****************************************
+% Contact
+% *****************************************
+\name{$contact.name$}
+\contact{$contact.email$}{$contact.phone$}
+
+% *****************************************
+% WORK EXPERIENCE
+% *****************************************
+\section{Work Experience}
+$for(work)$
+    \noindent\textbf{$work.company$}\hfill{$work.city$}\break\textit{$work.title$}\hfill{$work.years$}
+    \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+        $if(work.achievement1)$ \item \raggedright{$work.achievement1$} $endif$
+        $if(work.achievement2)$ \item \raggedright{$work.achievement2$} $endif$
+        $if(work.achievement3)$ \item \raggedright{$work.achievement3$} $endif$
+        $if(work.achievement4)$ \item \raggedright{$work.achievement4$} $endif$
+        $if(work.achievement5)$ \item \raggedright{$work.achievement5$} $endif$
+    \end{itemize}
+    \bigskip
+$endfor$
+
+% *****************************************
+% INTERNSHIPS
+% *****************************************
+\section{Internships}
+$for(internship)$
+    \noindent\textbf{$internship.company$}\hfill{$internship.city$}\break\textit{$internship.title$}\hfill{$internship.years$}
+    \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+        $if(internship.achievement1)$ \item \raggedright{$internship.achievement1$} $endif$
+        $if(internship.achievement2)$ \item \raggedright{$internship.achievement2$} $endif$
+        $if(internship.achievement3)$ \item \raggedright{$internship.achievement3$} $endif$
+        $if(internship.achievement4)$ \item \raggedright{$internship.achievement4$} $endif$
+        $if(internship.achievement5)$ \item \raggedright{$internship.achievement5$} $endif$
+    \end{itemize}
+    \bigskip
+$endfor$
+
+% *****************************************
+% COMPETITIONS / PROJECTS
+% *****************************************
+\section{Competitions / Projects}
+$for(project)$
+    \noindent\textbf{$project.title$ $if(project.descriptor)$ \unskip, \textit{$project.descriptor$} $endif$}\quad \textit{$project.location$} \hfill {$project.years$}
+    \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+        $if(project.achievement1)$ \item \raggedright{$project.achievement1$} $endif$
+        $if(project.achievement2)$ \item \raggedright{$project.achievement2$} $endif$
+        $if(project.achievement3)$ \item \raggedright{$project.achievement3$} $endif$
+        $if(project.achievement4)$ \item \raggedright{$project.achievement4$} $endif$
+        $if(project.achievement5)$ \item \raggedright{$project.achievement5$} $endif$
+    \end{itemize}
+    \bigskip
+$endfor$
+
+% *****************************************
+% LEADERSHIP / ACTIVITIES
+% *****************************************
+\section{Leadership / Activities}
+$for(activity)$
+    \noindent\textbf{$activity.group$} \hfill {$activity.location$}\break\textit{$activity.title$} \hfill {$activity.years$}
+    \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+        $if(activity.achievement1)$ \item \raggedright{$activity.achievement1$} $endif$
+        $if(activity.achievement2)$ \item \raggedright{$activity.achievement2$} $endif$
+        $if(activity.achievement3)$ \item \raggedright{$activity.achievement3$} $endif$
+        $if(activity.achievement4)$ \item \raggedright{$activity.achievement4$} $endif$
+        $if(activity.achievement5)$ \item \raggedright{$activity.achievement5$} $endif$
+    \end{itemize}
+    \bigskip
+$endfor$
+
+% *****************************************
+% EDUCATION
+% *****************************************
+\section{Education}
+$for(education)$
+    \noindent\textbf{$education.university$}\hfill{$education.city$}\break
+    \textit{$education.degree$}\hfill{$if(education.GPA)$ GPA: {$education.GPA$} $endif$}\hfill{$if(education.honors)$ Honors: \textit{$education.honors$} $endif$}\hfill{$education.year$}\break
+    {$if(education.majors)$ Majors: {$education.majors$} $endif$}
+    {$if(education.minors)$ \split{} Minors: {$education.minors$} $endif$}
+    \bigskip
+$endfor$
+
+% *****************************************
+% SKILLS
+% *****************************************
+\section{Skills}
+$for(skills)$
+    \noindent\textbf{$skills.type$: }$if(skills.skill1)$ \unskip{$skills.skill1$} $endif$ $if(skills.skill2)$ \unskip, {$skills.skill2$} $endif$ $if(skills.skill3)$ \unskip, {$skills.skill3$}$endif$\hfill\par
+$endfor$
+
+\end{document}
