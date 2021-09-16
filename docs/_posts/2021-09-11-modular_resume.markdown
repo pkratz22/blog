@@ -60,16 +60,9 @@ The class file handles the following:
     }
 }
 
-% Education
-\newcommand{\education}[8]{
-\noindent\textbf{#1} $\hfill$ #2 \break
-\textit{#3} $\hfill$ GPA: #4 $\hfill$ Honors: \textit{#5} $\hfill$ #6 \break
-Majors: #7 $\mid$ Minor: #8 \hfill
-}
-
-% Skills
-\newcommand{\skills}[4]{
-  \noindent{\textbf{#1: }#2, #3, #4}\hfill\break
+% Split
+\newcommand{\split}{
+  $\mid$
 }
 
 % Custom section
@@ -81,11 +74,14 @@ Majors: #7 $\mid$ Minor: #8 \hfill
   [\titlerule]                 % Inserts a horizontal line after the heading
 
 \titlespacing{\section}{0em}{0em}{2pt} % left spacing, before spacing, after spacing
-
 ```
 
 The LaTeX file handles the following:
 - (Some of the) Required Packages
+- File metadata for PDF Resume including:
+  - Author
+  - Title
+  - Language
 - Defining the formatting for each area of the resume, which in my case is:
 	- Contact information
 	- Work experience
@@ -99,9 +95,16 @@ The LaTeX file handles the following:
 \documentclass[11pt]{cv-class}
 
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{times}
 \usepackage{enumitem}
 \usepackage{microtype}
+\usepackage{hyperref}
+
+\hypersetup{pdfauthor={$meta.author$},
+            pdftitle={$meta.title$},
+            pdflang={$meta.language$}
+            }
 
 \begin{document}
 
@@ -182,7 +185,10 @@ $endfor$
 % *****************************************
 \section{Education}
 $for(education)$
-    \education{$education.university$}{$education.city$}{$education.degree$}{$education.GPA$}{$education.honors$}{$education.year$}{$education.majors$}{$education.minors$}
+    \noindent\textbf{$education.university$}\hfill{$education.city$}\break
+    \textit{$education.degree$}\hfill{$if(education.GPA)$ GPA: {$education.GPA$} $endif$}\hfill{$if(education.honors)$ Honors: \textit{$education.honors$} $endif$}\hfill{$education.year$}\break
+    {$if(education.majors)$ Majors: {$education.majors$} $endif$}
+    {$if(education.minors)$ \split{} Minors: {$education.minors$} $endif$}
     \bigskip
 $endfor$
 
@@ -195,7 +201,6 @@ $for(skills)$
 $endfor$
 
 \end{document}
-
 ```
 
 The makefile looks as follows:
@@ -229,7 +234,13 @@ clean:
 Then, the content is added to the YAML file:
 ```
 ---
-version: 2020-09-06
+version: 2020-09-14
+
+meta:
+  title: Peter Kratz Resume
+  author: Peter Kratz
+  date: 2021-09-14
+  language: en-US
 
 contact:
   name: Peter Kratz
