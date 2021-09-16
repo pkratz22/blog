@@ -25,7 +25,7 @@
 % *****************************************
 % WORK EXPERIENCE
 % *****************************************
-\section{Work Experience}
+$if(work)$ \section{Work Experience} $endif$
 $for(work)$
     \noindent\textbf{$work.company$}\hfill{$work.city$}\break\textit{$work.title$}\hfill{$work.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
@@ -95,7 +95,7 @@ $for(education)$
     \textit{$education.degree$}\hfill{$if(education.GPA)$ GPA: {$education.GPA$} $endif$}\hfill{$if(education.honors)$ Honors: \textit{$education.honors$} $endif$}\hfill{$education.year$}\break
     {$if(education.majors)$ Majors: {$education.majors$} $endif$}
     {$if(education.minors)$ \split{} Minors: {$education.minors$} $endif$}
-    \bigskip
+    \par
 $endfor$
 
 % *****************************************
@@ -103,7 +103,7 @@ $endfor$
 % *****************************************
 \section{Skills}
 $for(skills)$
-    \noindent\textbf{$skills.type$: }$if(skills.skill1)$ \unskip{$skills.skill1$} $endif$ $if(skills.skill2)$ \unskip, {$skills.skill2$} $endif$ $if(skills.skill3)$ \unskip, {$skills.skill3$}$endif$\hfill\par
+    \noindent\textbf{$skills.type$: }$if(skills.skill1)$ \unskip{$skills.skill1$} $endif$ $if(skills.skill2)$ \unskip, {$skills.skill2$} $endif$ $if(skills.skill3)$ \unskip, {$skills.skill3$}$endif$\hfill $if(skills.skill4)$ \unskip, {$skills.skill4$}$endif$\hfill $if(skills.skill5)$ \unskip, {$skills.skill5$}$endif$\hfill $if(skills.skill6)$ \unskip, {$skills.skill6$}$endif$\hfill $if(skills.skill7)$ \unskip, {$skills.skill7$}$endif$\hfill $if(skills.skill8)$ \unskip, {$skills.skill8$}$endif$\hfill \par
 $endfor$
 
 \end{document}
