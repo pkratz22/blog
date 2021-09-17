@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="pkratz22.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="pkratz22.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-09-16T02:52:45-04:00</updated><id>pkratz22.github.io/blog/feed.xml</id><title type="html">The Peter Kratz Blog</title><subtitle>The musings of Peter Kratz.  Music, data, sustainability, urban development, birds, puzzles, et cetera.</subtitle><entry><title type="html">Modular LaTeX Resume</title><link href="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html" rel="alternate" type="text/html" title="Modular LaTeX Resume" /><published>2021-09-11T22:05:31-04:00</published><updated>2021-09-11T22:05:31-04:00</updated><id>pkratz22.github.io/blog/professional/2021/09/11/modular_resume</id><content type="html" xml:base="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html">&lt;p&gt;The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="pkratz22.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="pkratz22.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-09-17T13:21:31-04:00</updated><id>pkratz22.github.io/blog/feed.xml</id><title type="html">The Peter Kratz Blog</title><subtitle>The musings of Peter Kratz.  Music, data, sustainability, urban development, birds, puzzles, et cetera.</subtitle><entry><title type="html">Modular LaTeX Resume</title><link href="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html" rel="alternate" type="text/html" title="Modular LaTeX Resume" /><published>2021-09-11T22:05:31-04:00</published><updated>2021-09-11T22:05:31-04:00</updated><id>pkratz22.github.io/blog/professional/2021/09/11/modular_resume</id><content type="html" xml:base="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html">&lt;p&gt;The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.&lt;/p&gt;
 
 &lt;p&gt;This project required creating four files:&lt;/p&gt;
 &lt;ul&gt;
@@ -125,7 +125,7 @@
 % *****************************************
 % WORK EXPERIENCE
 % *****************************************
-\section{Work Experience}
+$if(work)$ \section{Work Experience} $endif$
 $for(work)$
     \noindent\textbf{$work.company$}\hfill{$work.city$}\break\textit{$work.title$}\hfill{$work.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
@@ -195,7 +195,7 @@ $for(education)$
     \textit{$education.degree$}\hfill{$if(education.GPA)$ GPA: {$education.GPA$} $endif$}\hfill{$if(education.honors)$ Honors: \textit{$education.honors$} $endif$}\hfill{$education.year$}\break
     {$if(education.majors)$ Majors: {$education.majors$} $endif$}
     {$if(education.minors)$ \split{} Minors: {$education.minors$} $endif$}
-    \bigskip
+    \par
 $endfor$
 
 % *****************************************
@@ -203,7 +203,7 @@ $endfor$
 % *****************************************
 \section{Skills}
 $for(skills)$
-    \noindent\textbf{$skills.type$: }$if(skills.skill1)$ \unskip{$skills.skill1$} $endif$ $if(skills.skill2)$ \unskip, {$skills.skill2$} $endif$ $if(skills.skill3)$ \unskip, {$skills.skill3$}$endif$\hfill\par
+    \noindent\textbf{$skills.type$: }$if(skills.skill1)$ \unskip{$skills.skill1$} $endif$ $if(skills.skill2)$ \unskip, {$skills.skill2$} $endif$ $if(skills.skill3)$ \unskip, {$skills.skill3$}$endif$\hfill $if(skills.skill4)$ \unskip, {$skills.skill4$}$endif$\hfill $if(skills.skill5)$ \unskip, {$skills.skill5$}$endif$\hfill $if(skills.skill6)$ \unskip, {$skills.skill6$}$endif$\hfill $if(skills.skill7)$ \unskip, {$skills.skill7$}$endif$\hfill $if(skills.skill8)$ \unskip, {$skills.skill8$}$endif$\hfill \par
 $endfor$
 
 \end{document}
@@ -333,4 +333,10 @@ skills:
   &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/cv-template.tex&quot;&gt;cv-template.tex&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/cv-data.yml&quot;&gt;cv-data.yml&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/makefile&quot;&gt;makefile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To run, you will need a TeX Engine and Pandoc. Get them here:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.latex-project.org/get/&quot;&gt;TeX&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pandoc.org/installing.html&quot;&gt;Pandoc&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="professional" /><summary type="html">The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.</summary></entry></feed>

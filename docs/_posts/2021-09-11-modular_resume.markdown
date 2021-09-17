@@ -328,3 +328,7 @@ You can find the source files for cv-class.cls, cv-template.tex, cv-data.yml, an
 - [cv-template.tex]({{ site.baseurl }}/assets/modular_resume_source/cv-template.tex)
 - [cv-data.yml]({{ site.baseurl }}/assets/modular_resume_source/cv-data.yml)
 - [makefile]({{ site.baseurl }}/assets/modular_resume_source/makefile)
+
+To run, you will need a TeX Engine and Pandoc. Get them here:
+- [TeX](https://www.latex-project.org/get/)
+- [Pandoc](https://pandoc.org/installing.html)
