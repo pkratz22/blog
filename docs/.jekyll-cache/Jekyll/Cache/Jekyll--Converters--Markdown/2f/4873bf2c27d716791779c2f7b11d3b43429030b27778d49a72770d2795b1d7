@@ -1,9 +1,9 @@
-I"¨5<p>The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.</p>
+I"½7<p>The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.</p>
 
 <p>This project required creating four files:</p>
 <ul>
   <li>.cls class file</li>
-  <li>.yml content file</li>
+  <li>.yaml content file</li>
   <li>.tex design template file</li>
   <li>makefile</li>
 </ul>
@@ -125,7 +125,7 @@
 % *****************************************
 % WORK EXPERIENCE
 % *****************************************
-\section{Work Experience}
+$if(work)$ \section{Work Experience} $endif$
 $for(work)$
     \noindent\textbf{$work.company$}\hfill{$work.city$}\break\textit{$work.title$}\hfill{$work.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
@@ -195,7 +195,7 @@ $for(education)$
     \textit{$education.degree$}\hfill{$if(education.GPA)$ GPA: {$education.GPA$} $endif$}\hfill{$if(education.honors)$ Honors: \textit{$education.honors$} $endif$}\hfill{$education.year$}\break
     {$if(education.majors)$ Majors: {$education.majors$} $endif$}
     {$if(education.minors)$ \split{} Minors: {$education.minors$} $endif$}
-    \bigskip
+    \par
 $endfor$
 
 % *****************************************
@@ -203,7 +203,7 @@ $endfor$
 % *****************************************
 \section{Skills}
 $for(skills)$
-    \noindent\textbf{$skills.type$: }$if(skills.skill1)$ \unskip{$skills.skill1$} $endif$ $if(skills.skill2)$ \unskip, {$skills.skill2$} $endif$ $if(skills.skill3)$ \unskip, {$skills.skill3$}$endif$\hfill\par
+    \noindent\textbf{$skills.type$: }$if(skills.skill1)$ \unskip{$skills.skill1$} $endif$ $if(skills.skill2)$ \unskip, {$skills.skill2$} $endif$ $if(skills.skill3)$ \unskip, {$skills.skill3$}$endif$\hfill $if(skills.skill4)$ \unskip, {$skills.skill4$}$endif$\hfill $if(skills.skill5)$ \unskip, {$skills.skill5$}$endif$\hfill $if(skills.skill6)$ \unskip, {$skills.skill6$}$endif$\hfill $if(skills.skill7)$ \unskip, {$skills.skill7$}$endif$\hfill $if(skills.skill8)$ \unskip, {$skills.skill8$}$endif$\hfill \par
 $endfor$
 
 \end{document}
@@ -221,7 +221,7 @@ TEX=pdflatex
 BUILDTEX=$(TEX) $(PROJECT).tex
 
 all:
-	pandoc $(YAML).yml --template $(TEMPLATE).tex -o $(PROJECT).tex
+	pandoc $(YAML).yaml --template $(TEMPLATE).tex -o $(PROJECT).tex
 	$(BUILDTEX)
 	$(BUILDTEX)
 	$(BUILDTEX)
@@ -327,11 +327,17 @@ skills:
 <p>You can view the output in the following PDF:
 <a href="/blog/assets/pdfs/Peter_Kratz_Resume.pdf">Peter Kratz Resume</a></p>
 
-<p>You can find the source files for cv-class.cls, cv-template.tex, cv-data.yml, and makefile below:</p>
+<p>You can find the source files for cv-class.cls, cv-template.tex, cv-data.yaml, and makefile below:</p>
 <ul>
   <li><a href="/blog/assets/modular_resume_source/cv-class.cls">cv-class.cls</a></li>
   <li><a href="/blog/assets/modular_resume_source/cv-template.tex">cv-template.tex</a></li>
-  <li><a href="/blog/assets/modular_resume_source/cv-data.yml">cv-data.yml</a></li>
+  <li><a href="/blog/assets/modular_resume_source/cv-data.yaml">cv-data.yaml</a></li>
   <li><a href="/blog/assets/modular_resume_source/makefile">makefile</a></li>
+</ul>
+
+<p>To run, you will need a TeX Engine and Pandoc. Get them here:</p>
+<ul>
+  <li><a href="https://www.latex-project.org/get/">TeX</a></li>
+  <li><a href="https://pandoc.org/installing.html">Pandoc</a></li>
 </ul>
 :ET

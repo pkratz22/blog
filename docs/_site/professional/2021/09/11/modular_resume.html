@@ -52,7 +52,7 @@
 <p>This project required creating four files:</p>
 <ul>
   <li>.cls class file</li>
-  <li>.yml content file</li>
+  <li>.yaml content file</li>
   <li>.tex design template file</li>
   <li>makefile</li>
 </ul>
@@ -270,7 +270,7 @@ TEX=pdflatex
 BUILDTEX=$(TEX) $(PROJECT).tex
 
 all:
-	pandoc $(YAML).yml --template $(TEMPLATE).tex -o $(PROJECT).tex
+	pandoc $(YAML).yaml --template $(TEMPLATE).tex -o $(PROJECT).tex
 	$(BUILDTEX)
 	$(BUILDTEX)
 	$(BUILDTEX)
@@ -376,11 +376,11 @@ skills:
 <p>You can view the output in the following PDF:
 <a href="/blog/assets/pdfs/Peter_Kratz_Resume.pdf">Peter Kratz Resume</a></p>
 
-<p>You can find the source files for cv-class.cls, cv-template.tex, cv-data.yml, and makefile below:</p>
+<p>You can find the source files for cv-class.cls, cv-template.tex, cv-data.yaml, and makefile below:</p>
 <ul>
   <li><a href="/blog/assets/modular_resume_source/cv-class.cls">cv-class.cls</a></li>
   <li><a href="/blog/assets/modular_resume_source/cv-template.tex">cv-template.tex</a></li>
-  <li><a href="/blog/assets/modular_resume_source/cv-data.yml">cv-data.yml</a></li>
+  <li><a href="/blog/assets/modular_resume_source/cv-data.yaml">cv-data.yaml</a></li>
   <li><a href="/blog/assets/modular_resume_source/makefile">makefile</a></li>
 </ul>
 

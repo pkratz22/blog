@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="pkratz22.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="pkratz22.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-09-17T13:21:31-04:00</updated><id>pkratz22.github.io/blog/feed.xml</id><title type="html">The Peter Kratz Blog</title><subtitle>The musings of Peter Kratz.  Music, data, sustainability, urban development, birds, puzzles, et cetera.</subtitle><entry><title type="html">Modular LaTeX Resume</title><link href="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html" rel="alternate" type="text/html" title="Modular LaTeX Resume" /><published>2021-09-11T22:05:31-04:00</published><updated>2021-09-11T22:05:31-04:00</updated><id>pkratz22.github.io/blog/professional/2021/09/11/modular_resume</id><content type="html" xml:base="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html">&lt;p&gt;The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="pkratz22.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="pkratz22.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-09-17T21:26:12-04:00</updated><id>pkratz22.github.io/blog/feed.xml</id><title type="html">The Peter Kratz Blog</title><subtitle>The musings of Peter Kratz.  Music, data, sustainability, urban development, birds, puzzles, et cetera.</subtitle><entry><title type="html">Modular LaTeX Resume</title><link href="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html" rel="alternate" type="text/html" title="Modular LaTeX Resume" /><published>2021-09-11T22:05:31-04:00</published><updated>2021-09-11T22:05:31-04:00</updated><id>pkratz22.github.io/blog/professional/2021/09/11/modular_resume</id><content type="html" xml:base="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html">&lt;p&gt;The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.&lt;/p&gt;
 
 &lt;p&gt;This project required creating four files:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;.cls class file&lt;/li&gt;
-  &lt;li&gt;.yml content file&lt;/li&gt;
+  &lt;li&gt;.yaml content file&lt;/li&gt;
   &lt;li&gt;.tex design template file&lt;/li&gt;
   &lt;li&gt;makefile&lt;/li&gt;
 &lt;/ul&gt;
@@ -221,7 +221,7 @@ TEX=pdflatex
 BUILDTEX=$(TEX) $(PROJECT).tex
 
 all:
-	pandoc $(YAML).yml --template $(TEMPLATE).tex -o $(PROJECT).tex
+	pandoc $(YAML).yaml --template $(TEMPLATE).tex -o $(PROJECT).tex
 	$(BUILDTEX)
 	$(BUILDTEX)
 	$(BUILDTEX)
@@ -327,11 +327,11 @@ skills:
 &lt;p&gt;You can view the output in the following PDF:
 &lt;a href=&quot;/blog/assets/pdfs/Peter_Kratz_Resume.pdf&quot;&gt;Peter Kratz Resume&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;You can find the source files for cv-class.cls, cv-template.tex, cv-data.yml, and makefile below:&lt;/p&gt;
+&lt;p&gt;You can find the source files for cv-class.cls, cv-template.tex, cv-data.yaml, and makefile below:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/cv-class.cls&quot;&gt;cv-class.cls&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/cv-template.tex&quot;&gt;cv-template.tex&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/cv-data.yml&quot;&gt;cv-data.yml&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/cv-data.yaml&quot;&gt;cv-data.yaml&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/makefile&quot;&gt;makefile&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 

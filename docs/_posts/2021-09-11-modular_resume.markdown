@@ -8,7 +8,7 @@ The first blog post will discuss a recent mini-project I completed - transformin
 
 This project required creating four files:
 - .cls class file
-- .yml content file
+- .yaml content file
 - .tex design template file
 - makefile
 
@@ -216,7 +216,7 @@ TEX=pdflatex
 BUILDTEX=$(TEX) $(PROJECT).tex
 
 all:
-	pandoc $(YAML).yml --template $(TEMPLATE).tex -o $(PROJECT).tex
+	pandoc $(YAML).yaml --template $(TEMPLATE).tex -o $(PROJECT).tex
 	$(BUILDTEX)
 	$(BUILDTEX)
 	$(BUILDTEX)
@@ -323,10 +323,9 @@ skills:
 You can view the output in the following PDF:
 [Peter Kratz Resume]({{ site.baseurl }}/assets/pdfs/Peter_Kratz_Resume.pdf)
 
-You can find the source files for cv-class.cls, cv-template.tex, cv-data.yml, and makefile below:
+You can find the source files for cv-class.cls, cv-template.tex, and makefile below:
 - [cv-class.cls]({{ site.baseurl }}/assets/modular_resume_source/cv-class.cls)
 - [cv-template.tex]({{ site.baseurl }}/assets/modular_resume_source/cv-template.tex)
-- [cv-data.yml]({{ site.baseurl }}/assets/modular_resume_source/cv-data.yml)
 - [makefile]({{ site.baseurl }}/assets/modular_resume_source/makefile)
 
 To run, you will need a TeX Engine and Pandoc. Get them here:
