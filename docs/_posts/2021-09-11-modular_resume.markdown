@@ -151,7 +151,7 @@ $endfor$
 % *****************************************
 % COMPETITIONS / PROJECTS
 % *****************************************
-\section{Competitions / Projects}
+$if(project)$ \section{Competitions / Projects} $endif$
 $for(project)$
     \noindent\textbf{$project.title$ $if(project.descriptor)$ \unskip, \textit{$project.descriptor$} $endif$}\quad \textit{$project.location$} \hfill {$project.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
@@ -181,6 +181,20 @@ $for(activity)$
 $endfor$
 
 % *****************************************
+% RELEVANT COURSEWORK
+% *****************************************
+$if(coursework)$ \section{Relevant Coursework} $endif$
+$for(coursework)$
+    \noindent\textbf{$coursework.title$}
+    \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+        $if(coursework.description1)$ \item \raggedright{$coursework.description1$} $endif$
+        $if(coursework.description2)$ \item \raggedright{$coursework.description2$} $endif$
+        $if(coursework.description3)$ \item \raggedright{$coursework.description3$} $endif$
+    \end{itemize}
+    \bigskip
+$endfor$
+
+% *****************************************
 % EDUCATION
 % *****************************************
 \section{Education}
@@ -191,6 +205,7 @@ $for(education)$
     {$if(education.minors)$ \split{} Minors: {$education.minors$} $endif$}
     \par
 $endfor$
+\bigskip
 
 % *****************************************
 % SKILLS
