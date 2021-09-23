@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Modular LaTeX Resume"
-date:   2021-09-11 22:05:31 -0400
+title: "Modular LaTeX Resume"
+date: 2021-09-11 22:05:31 -0400
 categories: professional
 ---
 The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.

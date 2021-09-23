@@ -206,7 +206,7 @@ $endfor$
 % *****************************************
 % COMPETITIONS / PROJECTS
 % *****************************************
-\section{Competitions / Projects}
+$if(project)$ \section{Competitions / Projects} $endif$
 $for(project)$
     \noindent\textbf{$project.title$ $if(project.descriptor)$ \unskip, \textit{$project.descriptor$} $endif$}\quad \textit{$project.location$} \hfill {$project.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
@@ -236,6 +236,20 @@ $for(activity)$
 $endfor$
 
 % *****************************************
+% RELEVANT COURSEWORK
+% *****************************************
+$if(coursework)$ \section{Relevant Coursework} $endif$
+$for(coursework)$
+    \noindent\textbf{$coursework.title$}
+    \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+        $if(coursework.description1)$ \item \raggedright{$coursework.description1$} $endif$
+        $if(coursework.description2)$ \item \raggedright{$coursework.description2$} $endif$
+        $if(coursework.description3)$ \item \raggedright{$coursework.description3$} $endif$
+    \end{itemize}
+    \bigskip
+$endfor$
+
+% *****************************************
 % EDUCATION
 % *****************************************
 \section{Education}
@@ -246,6 +260,7 @@ $for(education)$
     {$if(education.minors)$ \split{} Minors: {$education.minors$} $endif$}
     \par
 $endfor$
+\bigskip
 
 % *****************************************
 % SKILLS
@@ -376,11 +391,10 @@ skills:
 <p>You can view the output in the following PDF:
 <a href="/blog/assets/pdfs/Peter_Kratz_Resume.pdf">Peter Kratz Resume</a></p>
 
-<p>You can find the source files for cv-class.cls, cv-template.tex, cv-data.yaml, and makefile below:</p>
+<p>You can find the source files for cv-class.cls, cv-template.tex, and makefile below:</p>
 <ul>
   <li><a href="/blog/assets/modular_resume_source/cv-class.cls">cv-class.cls</a></li>
   <li><a href="/blog/assets/modular_resume_source/cv-template.tex">cv-template.tex</a></li>
-  <li><a href="/blog/assets/modular_resume_source/cv-data.yaml">cv-data.yaml</a></li>
   <li><a href="/blog/assets/modular_resume_source/makefile">makefile</a></li>
 </ul>
 

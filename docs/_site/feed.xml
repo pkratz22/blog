@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="pkratz22.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="pkratz22.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-09-17T21:26:12-04:00</updated><id>pkratz22.github.io/blog/feed.xml</id><title type="html">The Peter Kratz Blog</title><subtitle>The musings of Peter Kratz.  Music, data, sustainability, urban development, birds, puzzles, et cetera.</subtitle><entry><title type="html">Modular LaTeX Resume</title><link href="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html" rel="alternate" type="text/html" title="Modular LaTeX Resume" /><published>2021-09-11T22:05:31-04:00</published><updated>2021-09-11T22:05:31-04:00</updated><id>pkratz22.github.io/blog/professional/2021/09/11/modular_resume</id><content type="html" xml:base="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html">&lt;p&gt;The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="pkratz22.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="pkratz22.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-09-23T00:14:08-04:00</updated><id>pkratz22.github.io/blog/feed.xml</id><title type="html">The Peter Kratz Blog</title><subtitle>The musings of Peter Kratz.  Music, data, sustainability, urban development, birds, puzzles, et cetera.</subtitle><entry><title type="html">Astoria Infrastructure Part 1</title><link href="pkratz22.github.io/blog/infrastructure/2021/09/22/astoria-infrastructure-part-1.html" rel="alternate" type="text/html" title="Astoria Infrastructure Part 1" /><published>2021-09-22T22:05:31-04:00</published><updated>2021-09-22T22:05:31-04:00</updated><id>pkratz22.github.io/blog/infrastructure/2021/09/22/astoria-infrastructure-part-1</id><content type="html" xml:base="pkratz22.github.io/blog/infrastructure/2021/09/22/astoria-infrastructure-part-1.html">&lt;p&gt;For this post, several factors regarding infrastructure in Astoria, New York will be explored. This type of post will be expanded to look at other areas of New York City, but first the focus will be on Astoria.&lt;/p&gt;
+
+&lt;p&gt;One of the first things to look at when it comes to analyzing urban infrastructure is problem areas. Cars lead to many different problem, but let’s start with the biggest one: death due to collisions. We can observe crash data at &lt;a href=&quot;https://crashmapper.org/#/&quot;&gt;NYC Crash Mapper&lt;/a&gt;, and they also allow for filters to be implemented and the data to be downloaded as a CSV, GeoJSON, Shapefile, or KML file. First, let’s focus on fatal crashes so far in 2021 (data from January to August). There have been three fatal crashes in Astoria in 2021, two occuring only blocks away from each other.&lt;/p&gt;
+
+&lt;p&gt;Next, let’s take a look at any traffic calming measures that the city has implemented in those areas. A very nice thing that New York City does is provide data as part of its Vision Zero initiative. Data can be found at &lt;a href=&quot;https://vzv.nyc/&quot;&gt;vzv.nyc&lt;/a&gt;. There are some good data sources for &lt;em&gt;some&lt;/em&gt; traffic calming measures, but there are some for which data is missing, such as lane width and specific implements such as pinchpoints and chicanes.&lt;/p&gt;
+
+&lt;p&gt;Let’s take a look at what traffic calming measures data currently exists for and what they mean. Then we can take a look at what’s missing and would be nice to see added.&lt;/p&gt;
+
+&lt;p&gt;Currently filters available and their definitions per the Department of Transportation:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Leading pedestrian intervals&lt;/strong&gt; - Intersections where DOT installs signals that show a walk sign for pedestrians before showing a green light to vehicle traffic. The goal of these signals is to improve street safety by giving pedestrians a chance to establish their presence in the crosswalk before vehicles make turns across that crosswalk.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Major Safety Projects&lt;/strong&gt; - Safety-oriented engineering improvements that use multiple treatments (signals, markings, concrete etc) on both corridors and intersections. Improvements are generally aimed at better organizing traffic, improving travel times, creating shorter, safer pedestrian crossings, and safe routes for bicycle travel. The map displays operational (non-capital) projects from the start of Vision Zero onward: 2014 to present.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Arterial Slow Zones&lt;/strong&gt; - The Arterial Slow Zone program uses a combination of a lower speed limit, signal timing changes, distinctive signs and increased enforcement to improve safety on some of New York City’s most high-crash corridors.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Speed Humps&lt;/strong&gt; - Speed Humps are a raised area of a roadway designed to reduce vehicle speeds. Dates reflect the first time a speed hump was installed at a location, subsequent removals and/or re-installations are not included.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Safe Streets For Seniors&lt;/strong&gt; - The Safe Streets for Seniors program is an initiative aimed at increasing safety for older New Yorkers. Based on factors such as senior population density, injury crashes, and senior trip generators, DOT has selected and studied 25 Senior Pedestrian Focus Areas. Within these areas, DOT evaluates potential safety improvements and also conducts education outreach to senior centers.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Neighborhood Slow Zones&lt;/strong&gt; - The Neighborhood Slow Zone program is an application based program which takes a neighborhood area and reduces the speed limit to 20 mph. Areas are chosen based on crashes, presence of schools and other neighborhood amenities, and community support. The treatments include a mixture of markings, signage, and speed humps.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;25MPH Signal Retiming&lt;/strong&gt; - Priority Corridors where the signal progression has been changed to match the 25 MPH speed limit.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Turn Traffic Calming&lt;/strong&gt; - Intersections where DOT installs traffic calming measures that guide drivers to turn left or right at a safer speed and angle, as well as increase visibility for pedestrians in the crosswalk.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Enhanced Crossings&lt;/strong&gt; - Enhanced Crossings are marked high-visibility crosswalks on calm streets with low vehicle volumes and a strong pedestrian desire to cross. Standard DOT toolbox treatments are used (ADA pedestrian ramps, pedestrian warning signs and high-visibility crosswalk markings) to improve the mobility and accessibility of pedestrians.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Priority Intersections&lt;/strong&gt; - The intersections with the highest number of pedestrian KSI (killed and severely injured) that cumulatively account for 15% of the borough’s total pedestrian KSI. Developed as part of the Borough Pedestrian Safety Action Plans.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Priority Corridors&lt;/strong&gt; - All corridors in each borough were ranked on a pedestrian KSI (killed and severely injured) per-mile basis. Corridors were selected from the top of this list until the cumulative number of KSI reached half of the borough’s total. Developed as part of the Borough Pedestrian Safety Action Plans.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Priority Areas&lt;/strong&gt; - Areas in each borough were ranked on a pedestrian KSI density basis. Areas were selected from most dense to least, such that, when combined, account for half of all of pedestrian KSI in the borough. Developed as part of the Borough Pedestrian Safety Action Plans.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ike Priority Areas&lt;/strong&gt; - Priority Bicycle Districts are neighborhoods with comparatively high numbers of cyclist KSI and few dedicated bicycle facilities. These districts, seven in Brooklyn and three in Queens, represent 14% of the City’s bicycle lane network and 23% of cyclist KSI. NYC DOT identified these areas in the 2017 report “Safer Cycling: Bicycle Ridership and Safety in New York City.” The agency has prioritized these areas for bicycle network expansion.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Several of these categories do not represent safety measures that have been implemented. The safety measures that will be looked at are:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Leading Pedestrian Intervals&lt;/li&gt;
+  &lt;li&gt;Arterial Slow Zones&lt;/li&gt;
+  &lt;li&gt;Speed Humps&lt;/li&gt;
+  &lt;li&gt;Neighborhood Slow Zones&lt;/li&gt;
+  &lt;li&gt;25MPH Signal Retiming&lt;/li&gt;
+  &lt;li&gt;Turn Traffic Calming&lt;/li&gt;
+  &lt;li&gt;Enhanced Crossings&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Major Safety Projects&lt;/strong&gt; is a set of multiple safety measures that may have been implemented, but since it does not specify what measures have been implemented, will not be used in this brief analysis.&lt;/p&gt;
+
+&lt;p&gt;Specific datasets for these different measures can be downloaded at 
+&lt;a href=&quot;https://data.cityofnewyork.us/browse?q=VZV&amp;amp;sortBy=relevance&quot;&gt;data.cityofnewyork.us&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For this, GeoJSON files were downloaded for each of the above 7 measures, as well as a GeoJSON file for the borough boundaries &lt;a href=&quot;https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm&quot;&gt;found here&lt;/a&gt; and a GeoJSON for speed limits, &lt;a href=&quot;https://data.cityofnewyork.us/Transportation/VZV_Speed-Limits/7n5j-865y&quot;&gt;found here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Using QGIS, the above data were mapped. Let’s focus on the areas of the fatal crashes.&lt;/p&gt;
+
+&lt;p&gt;The first fatal crash occurred at the intersection of 31st Street and 35th Avenue and 1 motorist killed and 1 motorist injured. According to a &lt;a href=&quot;https://www.qgazette.com/articles/crash-kills-astoria-man-62/&quot;&gt;News Report&lt;/a&gt;, the crash was between a vehicle driving eastbound on 35th Avenue and a vehicle driving southbound on 31st Street. The speed limit of both streets at the intersection is 25 MPH, but the road is not designed to cause drivers to stay at that speed limit. The news report states that the driver driving southbound on 31st street was speeding. According to Crash Mappers, a contributing factor was “Traffic Control Disregarded”. Ideally, there would be road infrastructure that would prevent the driver from speeding, of which there are currently none on 31st Street between 35th Avenue and 34th Avenue.&lt;/p&gt;
+
+&lt;p&gt;One solution would be to narrow the road, which tends to cause individuals to drive slower. Studies have shown that decreasing road width leads to decreased driving speed. NYC Planning provides information regarding street widths (unfortunately including sidewalks), and shows that 31st Street between 35th Avenue and 34th Avenue to be 100 feet wide. Part of that is due to the sidwewalks, parking, and poles from the el, but the streets are also wide enough that they do not deter drivers from speeding. (Ideally in the future we can also see lane widths, but for now, if that data is publicly available, I do not know where) Also, simply adding speed humps will prevent drivers from speeding. Furthermore, at the intersection, the addition of a speed table would serve a similar purpose, and help prevent motorists from speeding through intersections. These factors are not perfect, but would have lessened the likelihood that a fatal accident like this would occur.&lt;/p&gt;
+
+&lt;p&gt;The second fatal crash occurred near the intersection of 35th Street and Ditmars Boulevard. The death was a pedestrian death, that of a delivery driver who was in the bicycle lane. New York City provides a map that shows all bicycle lanes by type &lt;a href=&quot;https://www1.nyc.gov/html/dot/downloads/pdf/nyc-bike-map-2021.pdf&quot;&gt;here&lt;/a&gt;. The driver and pedestrian were on 35th Street, which has a conventional bicycle lane, but not a protected bicycle lane. The driver was able to drive in the bicycle lane, which she did, when she struck him. If there was a protected bicycle lane, there is a very strong chance this situation wouldn’t have occurred. Additionally, the protected bicycle lane could have been built in such a way that the car lane would be narrowed. There is another major issue here - the driver was driving at twice the speed limit, per &lt;a href=&quot;https://nyc.streetsblog.org/2021/05/04/is-road-rage-a-medical-episode-nypd-says-fatal-crash-in-queens-is-still-under-investigation/&quot;&gt;streetsblog&lt;/a&gt;. There are no traffic calming implementations on 35th Street between Ditmars Boulevard and 21st Avenue that could have helped prevent the driver from reaching that speed. Simply including speed humps on that street would have likely helped prevent the accident from being fatal, and implementing both of these measures could have possibly prevented any accident from occurring at all. There are other methods that can be used to prevent speeding, such as changing road textures, as described by &lt;a href=&quot;https://globaldesigningcities.org/publication/global-street-design-guide/designing-streets-people/designing-for-motorists/traffic-calming-strategies/&quot;&gt;Global Designing Cities&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The third fatal crash occurred when an e-bike rider crashed into a pedestrian at the intersection of 31st Street and 21st Avenue. First, e-bikes belong in bicycle lanes and mopeds belong in vehicle lanes as per &lt;a href=&quot;https://www1.nyc.gov/html/dot/html/bicyclists/ebikes.shtml&quot;&gt;nyc.gov&lt;/a&gt;. This case involved an e-bike per &lt;a href=&quot;https://qns.com/2021/06/e-bike-rider-fatally-strikes-woman-in-astoria-nypd/&quot;&gt;QNS&lt;/a&gt;. The e-bike rider was cycling on 21st Avenue, which does not have a bicycle lane. This is another situation where just having a conventional bicycle lane would have helped greatly, although a protected bicycle lane would be even better. The protected bike lane could be coupled with an island where pedestrians cross the street. Another issue here is traffic light settings at that intersection (along with most other intersections in New York City and the United States). Bicycles often ignore traffic signals (that is not necessarily the case here, and news sources didn’t indicate who had the right of way or what cause the crash) because often the lights run on a circuit and this leads to unnecessary wait times for cyclists (and pedestrians and cars). The proper alternative to this is using traffic signal prioritization, of which there are different methods for detecting different vehicles. By optimizing traffic signals, we can decrease wait times and increase the likelihood that individuals, whether it be drivers, cyclists, or pedestrians, will follow the traffic signals. We can see the positive impact it has in places like ’s-Hertogenbosch, as described by &lt;a href=&quot;https://bicycledutch.wordpress.com/2016/06/21/traffic-lights-in-s-hertogenbosch-an-interview/&quot;&gt;Bicycle Dutch&lt;/a&gt; and in this video by &lt;a href=&quot;https://www.youtube.com/watch?v=knbVWXzL4-4&quot;&gt;Not Just Bikes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;These changes - adding speed humps, speed tables, protected bicycle lanes, pedestrian islands, lane narrowing, and traffic signal prioritization - are all methods of traffic calming that would help reduce fatalities, as well as injuries. These consequences are preventable if a greater focus is placed on improving road safety through some of the many methods available and hopefully, as Vision Zero continues, more will be implemented to help make the city a safer place. The city should also focus on preventative measures, and not only react to deaths. Every injury should be inspected and measures should be implemented to prevent them from repeating.&lt;/p&gt;</content><author><name></name></author><category term="infrastructure" /><summary type="html">For this post, several factors regarding infrastructure in Astoria, New York will be explored. This type of post will be expanded to look at other areas of New York City, but first the focus will be on Astoria.</summary></entry><entry><title type="html">Modular LaTeX Resume</title><link href="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html" rel="alternate" type="text/html" title="Modular LaTeX Resume" /><published>2021-09-11T22:05:31-04:00</published><updated>2021-09-11T22:05:31-04:00</updated><id>pkratz22.github.io/blog/professional/2021/09/11/modular_resume</id><content type="html" xml:base="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html">&lt;p&gt;The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.&lt;/p&gt;
 
 &lt;p&gt;This project required creating four files:&lt;/p&gt;
 &lt;ul&gt;
@@ -157,7 +210,7 @@ $endfor$
 % *****************************************
 % COMPETITIONS / PROJECTS
 % *****************************************
-\section{Competitions / Projects}
+$if(project)$ \section{Competitions / Projects} $endif$
 $for(project)$
     \noindent\textbf{$project.title$ $if(project.descriptor)$ \unskip, \textit{$project.descriptor$} $endif$}\quad \textit{$project.location$} \hfill {$project.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
@@ -187,6 +240,20 @@ $for(activity)$
 $endfor$
 
 % *****************************************
+% RELEVANT COURSEWORK
+% *****************************************
+$if(coursework)$ \section{Relevant Coursework} $endif$
+$for(coursework)$
+    \noindent\textbf{$coursework.title$}
+    \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+        $if(coursework.description1)$ \item \raggedright{$coursework.description1$} $endif$
+        $if(coursework.description2)$ \item \raggedright{$coursework.description2$} $endif$
+        $if(coursework.description3)$ \item \raggedright{$coursework.description3$} $endif$
+    \end{itemize}
+    \bigskip
+$endfor$
+
+% *****************************************
 % EDUCATION
 % *****************************************
 \section{Education}
@@ -197,6 +264,7 @@ $for(education)$
     {$if(education.minors)$ \split{} Minors: {$education.minors$} $endif$}
     \par
 $endfor$
+\bigskip
 
 % *****************************************
 % SKILLS
@@ -327,11 +395,10 @@ skills:
 &lt;p&gt;You can view the output in the following PDF:
 &lt;a href=&quot;/blog/assets/pdfs/Peter_Kratz_Resume.pdf&quot;&gt;Peter Kratz Resume&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;You can find the source files for cv-class.cls, cv-template.tex, cv-data.yaml, and makefile below:&lt;/p&gt;
+&lt;p&gt;You can find the source files for cv-class.cls, cv-template.tex, and makefile below:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/cv-class.cls&quot;&gt;cv-class.cls&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/cv-template.tex&quot;&gt;cv-template.tex&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/cv-data.yaml&quot;&gt;cv-data.yaml&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/blog/assets/modular_resume_source/makefile&quot;&gt;makefile&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
