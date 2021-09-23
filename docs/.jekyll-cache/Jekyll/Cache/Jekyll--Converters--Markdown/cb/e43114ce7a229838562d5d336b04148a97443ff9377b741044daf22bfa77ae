@@ -1,53 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Astoria Infrastructure Part 1 | The Peter Kratz Blog</title>
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Astoria Infrastructure Part 1" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="For this post, several factors regarding infrastructure in Astoria, New York will be explored. This type of post will be expanded to look at other areas of New York City, but first the focus will be on Astoria." />
-<meta property="og:description" content="For this post, several factors regarding infrastructure in Astoria, New York will be explored. This type of post will be expanded to look at other areas of New York City, but first the focus will be on Astoria." />
-<link rel="canonical" href="pkratz22.github.io/blog/infrastructure/2021/09/22/astoria-infrastructure-part-1.html" />
-<meta property="og:url" content="pkratz22.github.io/blog/infrastructure/2021/09/22/astoria-infrastructure-part-1.html" />
-<meta property="og:site_name" content="The Peter Kratz Blog" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-09-22T22:05:31-04:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Astoria Infrastructure Part 1" />
-<script type="application/ld+json">
-{"headline":"Astoria Infrastructure Part 1","dateModified":"2021-09-22T22:05:31-04:00","datePublished":"2021-09-22T22:05:31-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"pkratz22.github.io/blog/infrastructure/2021/09/22/astoria-infrastructure-part-1.html"},"description":"For this post, several factors regarding infrastructure in Astoria, New York will be explored. This type of post will be expanded to look at other areas of New York City, but first the focus will be on Astoria.","url":"pkratz22.github.io/blog/infrastructure/2021/09/22/astoria-infrastructure-part-1.html","@type":"BlogPosting","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="pkratz22.github.io/blog/feed.xml" title="The Peter Kratz Blog" /></head>
-<body><header class="site-header" role="banner">
-
-  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">The Peter Kratz Blog</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger"><a class="page-link" href="/blog/about/">About</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Astoria Infrastructure Part 1</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="2021-09-22T22:05:31-04:00" itemprop="datePublished">Sep 22, 2021
-      </time></p>
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <p>For this post, several factors regarding infrastructure in Astoria, New York will be explored. This type of post will be expanded to look at other areas of New York City, but first the focus will be on Astoria.</p>
+I"�8<p>For this post, several factors regarding infrastructure in Astoria, New York will be explored. This type of post will be expanded to look at other areas of New York City, but first the focus will be on Astoria.</p>
 
 <h2 id="crashes">Crashes</h2>
 
@@ -109,11 +60,9 @@
 <p>Solutions:</p>
 <ul>
   <li><strong>Road narrowing</strong> - <a href="https://journals.sagepub.com/doi/abs/10.3141/1751-03?journalCode=trra">narrowing roads causes individuals to drive slower</a>. NYC Planning provides information regarding street widths (unfortunately including sidewalks), and shows that 31st Street between 35th Avenue and 34th Avenue to be 100 feet wide. Part of that is due to the sidwewalks, parking, and poles from the el, but the streets are also wide enough that they do not deter drivers from speeding. (Ideally in the future we can also see lane widths, but for now, if that data is publicly available, I do not know where)</li>
-  <li><strong>Speed Humps</strong> - <a href="https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?article=1424&amp;context=etd_projects">Simply adding speed humps will prevent drivers from speeding as much.</a></li>
-  <li><strong>Speed Table</strong> - At the intersection, the addition of a speed table would serve a similar purpose, and help prevent motorists from speeding through intersections.</li>
+  <li><strong>Speed Humps</strong> - Also, simply adding speed humps will prevent drivers from speeding.</li>
+  <li><strong>Speed Table</strong> - Furthermore, at the intersection, the addition of a speed table would serve a similar purpose, and help prevent motorists from speeding through intersections. These factors are not perfect, but would have lessened the likelihood that a fatal accident like this would occur.</li>
 </ul>
-
-<p>These factors are not perfect, but would have lessened the likelihood that a fatal accident like this would occur.</p>
 
 <p><img src="/blog/assets/images/crash1image1.png" alt="Fatal Crash Map 2021 Jan - 2021 Aug" /></p>
 
@@ -129,59 +78,13 @@
 
 <h3 id="fatal-crash-2">Fatal Crash #2</h3>
 
-<p>The second fatal crash occurred near the intersection of 35th Street and Ditmars Boulevard. The death was a pedestrian death, that of a delivery driver who was in the bicycle lane. New York City provides a map that shows all bicycle lanes by type <a href="https://www1.nyc.gov/html/dot/downloads/pdf/nyc-bike-map-2021.pdf">here</a>. The driver and pedestrian were on 35th Street, which has a conventional bicycle lane, but not a protected bicycle lane. The driver was able to drive in the bicycle lane, which she did, when she struck him. The driver was also speeding at double the speed limit, per <a href="https://nyc.streetsblog.org/2021/05/04/is-road-rage-a-medical-episode-nypd-says-fatal-crash-in-queens-is-still-under-investigation/">streetsblog</a>.</p>
-
-<p>Solutions:</p>
-<ul>
-  <li><strong>Protected bicycle lane</strong> - A protected bicycle lane would have prevented the driver from entering the bicycle lane, where she struck the pedestrian.</li>
-  <li><strong>Lane Narrowing</strong> - The protected bicycle lane could have been built in such a way that the car lane would be narrowed.</li>
-  <li><strong>Speed Humps</strong> - Adequate speed humps would have prevented the driver from being able to accelerate to 50 MPH.</li>
-  <li><strong>Road Texture</strong> - Changing road textures, as described by <a href="https://globaldesigningcities.org/publication/global-street-design-guide/designing-streets-people/designing-for-motorists/traffic-calming-strategies/">Global Designing Cities</a>, could potentially decrease driver speed and increase driver awareness.</li>
-</ul>
+<p>The second fatal crash occurred near the intersection of 35th Street and Ditmars Boulevard. The death was a pedestrian death, that of a delivery driver who was in the bicycle lane. New York City provides a map that shows all bicycle lanes by type <a href="https://www1.nyc.gov/html/dot/downloads/pdf/nyc-bike-map-2021.pdf">here</a>. The driver and pedestrian were on 35th Street, which has a conventional bicycle lane, but not a protected bicycle lane. The driver was able to drive in the bicycle lane, which she did, when she struck him. If there was a protected bicycle lane, there is a very strong chance this situation wouldn’t have occurred. Additionally, the protected bicycle lane could have been built in such a way that the car lane would be narrowed. There is another major issue here - the driver was driving at twice the speed limit, per <a href="https://nyc.streetsblog.org/2021/05/04/is-road-rage-a-medical-episode-nypd-says-fatal-crash-in-queens-is-still-under-investigation/">streetsblog</a>. There are no traffic calming implementations on 35th Street between Ditmars Boulevard and 21st Avenue that could have helped prevent the driver from reaching that speed. Simply including speed humps on that street would have likely helped prevent the accident from being fatal, and implementing both of these measures could have possibly prevented any accident from occurring at all. There are other methods that can be used to prevent speeding, such as changing road textures, as described by <a href="https://globaldesigningcities.org/publication/global-street-design-guide/designing-streets-people/designing-for-motorists/traffic-calming-strategies/">Global Designing Cities</a>.</p>
 
 <h3 id="fatal-crash-3">Fatal Crash #3</h3>
 
-<p>The third fatal crash occurred when an e-bike rider crashed into a pedestrian at the intersection of 31st Street and 21st Avenue. First, e-bikes belong in bicycle lanes and mopeds belong in vehicle lanes as per <a href="https://www1.nyc.gov/html/dot/html/bicyclists/ebikes.shtml">nyc.gov</a>. This case involved an e-bike per <a href="https://qns.com/2021/06/e-bike-rider-fatally-strikes-woman-in-astoria-nypd/">QNS</a>.</p>
-
-<p>Solutions:</p>
-<ul>
-  <li><strong>Adding a (protected) bicycle lane</strong> - Adding a conventional bicycle lane would have helped prevent the cyclist - pedestrian collision, but creating a protected bicycle lane would be ideal</li>
-  <li><strong>Adding a pedestrian island between the bicycle lane and street</strong> - The protected bike lane could be coupled with an island where pedestrians cross the street.</li>
-  <li><strong>Traffic signal prioritization</strong> - Traffic signal prioritization can be used to minimize conflict between cars, cyclists, and pedestrians, while also minimizing wait times. There are different methods for detecting different vehicles, such as using GPS tracking in busses and line-of-sight detection to count the number of vehicles, cyclists, and pedestrians and change signals accordingly. By optimizing traffic signals, we can decrease wait times and increase the likelihood that individuals, whether it be drivers, cyclists, or pedestrians, will follow the traffic signals. We can see the positive impact it has in places like ’s-Hertogenbosch, as described by <a href="https://bicycledutch.wordpress.com/2016/06/21/traffic-lights-in-s-hertogenbosch-an-interview/">Bicycle Dutch</a> and in this video by <a href="https://www.youtube.com/watch?v=knbVWXzL4-4">Not Just Bikes</a>.</li>
-</ul>
+<p>The third fatal crash occurred when an e-bike rider crashed into a pedestrian at the intersection of 31st Street and 21st Avenue. First, e-bikes belong in bicycle lanes and mopeds belong in vehicle lanes as per <a href="https://www1.nyc.gov/html/dot/html/bicyclists/ebikes.shtml">nyc.gov</a>. This case involved an e-bike per <a href="https://qns.com/2021/06/e-bike-rider-fatally-strikes-woman-in-astoria-nypd/">QNS</a>. The e-bike rider was cycling on 21st Avenue, which does not have a bicycle lane. This is another situation where just having a conventional bicycle lane would have helped greatly, although a protected bicycle lane would be even better. The protected bike lane could be coupled with an island where pedestrians cross the street. Another issue here is traffic light settings at that intersection (along with most other intersections in New York City and the United States). Bicycles often ignore traffic signals (that is not necessarily the case here, and news sources didn’t indicate who had the right of way or what cause the crash) because often the lights run on a circuit and this leads to unnecessary wait times for cyclists (and pedestrians and cars). The proper alternative to this is using traffic signal prioritization, of which there are different methods for detecting different vehicles. By optimizing traffic signals, we can decrease wait times and increase the likelihood that individuals, whether it be drivers, cyclists, or pedestrians, will follow the traffic signals. We can see the positive impact it has in places like ’s-Hertogenbosch, as described by <a href="https://bicycledutch.wordpress.com/2016/06/21/traffic-lights-in-s-hertogenbosch-an-interview/">Bicycle Dutch</a> and in this video by <a href="https://www.youtube.com/watch?v=knbVWXzL4-4">Not Just Bikes</a>.</p>
 
 <h2 id="summary">Summary</h2>
 
 <p>These changes - adding speed humps, speed tables, protected bicycle lanes, pedestrian islands, lane narrowing, and traffic signal prioritization - are all methods of traffic calming that would help reduce fatalities, as well as injuries. These consequences are preventable if a greater focus is placed on improving road safety through some of the many methods available and hopefully, as Vision Zero continues, more will be implemented to help make the city a safer place. The city should also focus on preventative measures, and not only react to deaths. Every injury should be inspected and measures should be implemented to prevent them from repeating.</p>
-
-  </div><a class="u-url" href="/blog/infrastructure/2021/09/22/astoria-infrastructure-part-1.html" hidden></a>
-</article>
-
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/blog/"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">The Peter Kratz Blog</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">The Peter Kratz Blog</li><li><a class="u-email" href="mailto:pkratz22@gmail.com">pkratz22@gmail.com</a></li></ul>
-      </div>
-
-      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
-</div>
-
-      <div class="footer-col footer-col-3">
-        <p>The musings of Peter Kratz.  Music, data, sustainability, urban development, birds, puzzles, et cetera.</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
-</body>
-
-</html>
+:ET
