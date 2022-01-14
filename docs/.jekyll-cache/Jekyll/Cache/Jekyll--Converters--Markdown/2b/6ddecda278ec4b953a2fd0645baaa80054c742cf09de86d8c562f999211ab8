@@ -1,0 +1,101 @@
+I"b<p>Astoria currently has two major train lines that run through it:</p>
+<ul>
+  <li>The IND Queens Boulevard Line</li>
+  <li>The BMT Astoria Line</li>
+</ul>
+
+<p>An improvement that would provide a large benefit to Astorians is the implementation of CBTC on these two lines.</p>
+
+<h2 id="what-is-cbtc">What is CBTC</h2>
+<p>Communications-based train control, or CBTC, is a railway signaling system that uses telecommuniciations to provide a more accurate location of the train compared to the automatic block signaling, or ABS, system currently used. The ABS system divides the track into a series of blocks and the signaling system could detect whether blocks are occupied or available and automatically determine whether the train can proceed to the future blocks. CBTC is a continuous system, so it can detect train positions more accurately, reducing headways and delays, providing more accurate arrival time estimates, and increasing safety.</p>
+
+<h2 id="prioritizing-cbtc">Prioritizing CBTC</h2>
+<p>When discussing improvements, it makes sense to consider improving entire lines together. This will then need to be further broken down by station, track lines, rolling stock, etc.</p>
+
+<p>For that reason, the following information involves trains that run on either the IND Queens Boulevard Line or the BMT Astoria Line, even if the train does not run in Astoria (generally).</p>
+
+<p>The IND Queens Boulevard Line runs the:</p>
+<ul>
+  <li>E Train</li>
+  <li>F Train</li>
+  <li>F Express Train</li>
+  <li>M Train</li>
+  <li>R Train</li>
+</ul>
+
+<p>The BMT Astoria Line runs the:</p>
+<ul>
+  <li>N Train</li>
+  <li>W Train</li>
+</ul>
+
+<p>Looking at the Subway Weekday % Service Delivered and Subway Weekend % Service Delivered from <a href="https://new.mta.info/document/68221">the December 2021 MTA Board Meeting</a>, we see the following:</p>
+<ul>
+  <li>E -&gt; 92.4% / 92.4%</li>
+  <li>F -&gt; 88.7% / 88.7%</li>
+  <li>M -&gt; 90.0% / 90.0%</li>
+  <li>R -&gt; 89.4% / 89.4%</li>
+  <li>N -&gt; 90.0% / 90.0%</li>
+  <li>W -&gt; 85.5% / NA</li>
+</ul>
+
+<p>Additionally, we can look at the subway weekday and weekend average customer journey time performance, which measures the percentage of customer trips with total travel times within 5 minutes of the scheduled time.</p>
+<ul>
+  <li>E -&gt; 80.7%</li>
+  <li>F -&gt; 82.1%</li>
+  <li>M -&gt; 79.1%</li>
+  <li>R -&gt; 79.4%</li>
+  <li>N -&gt; 79.0%</li>
+  <li>W -&gt; 86.4%</li>
+</ul>
+
+<p>These statistics are not restricted to the BMT Astoria Line and the IND Queens Boulevard Line, and represent percentage of service delivered along the entire routes of the trains.</p>
+
+<p>This gives us a general idea on which trains that use these two lines are slower, but the other factor to consider is usage. If one line has significantly higher usage, it may be of a higher priority. The MTA provides data on annual usage for each station, so let’s look at the stations along these two lines. This data can be found <a href="https://new.mta.info/document/16136">here</a>. It is important to note that some of these stations have other train lines, allowing for transfers, which could lead to the stations having higher numbers than the lines. It is also important to note that some of these stations were undergoing improvements, such as the Astoria Boulevard Station, which led to a massive decrease in ridership.</p>
+
+<p>Here are the BMT Astoria Line stations and annual use (from 2019):</p>
+<ul>
+  <li>Astoria - Ditmars Boulevard -&gt; 5,277,341</li>
+  <li>Astoria Boulevard -&gt; 723,354</li>
+  <li>30th Avenue -&gt; 5,230,182</li>
+  <li>Broadway -&gt; 3,038,655</li>
+  <li>36th Avenue -&gt; 1,933,812</li>
+  <li>39th Avenue -&gt; 761,816</li>
+  <li>Queensboro Plaza -&gt; 5,018,211</li>
+  <li>Total -&gt; 21,983,371</li>
+</ul>
+
+<p>Here are the IND Queens Boulevard Line stations and annual use (frmo 2019):</p>
+<ul>
+  <li>Jamaica - 179th Street -&gt; 6,262,449</li>
+  <li>169th Street -&gt; 2,465,120</li>
+  <li>Parsons Boulevard -&gt; 2,086,114</li>
+  <li>Sutphin Boulevard -&gt; 1,345,420</li>
+  <li>Briarwood -&gt; 1,501,152</li>
+  <li>Kew Gardens - Union Turnpike -&gt; 7,625,674</li>
+  <li>75th Avenue -&gt; 1,059,027</li>
+  <li>Forest Hills - 71st Avenue -&gt; 8,027,234</li>
+  <li>67th Avenue -&gt; 2,641,450</li>
+  <li>63rd Avenue - Rego Park -&gt; 4,753,706</li>
+  <li>Woodhaven Boulevard -&gt; 6,381,132</li>
+  <li>Grand Avenue - Newtown -&gt; 5,730,846</li>
+  <li>Elmhurst Avenue -&gt; 3,867,341</li>
+  <li>Jackson Heights - Roosevelt Avenue -&gt; 17,077,862</li>
+  <li>65th Street -&gt; 1,098,148</li>
+  <li>Northern Boulevard -&gt; 2,008,091</li>
+  <li>46th Street -&gt; 2,609,445</li>
+  <li>Steinway Street -&gt; 4,715,335</li>
+  <li>36th Street -&gt; 1,383,420</li>
+  <li>Queens Plaza -&gt; 4,334,290</li>
+  <li>Court Square - 23rd Street -&gt; 7,033,377</li>
+  <li>Lexington Avenue - 53rd Street -&gt; 18,957,465</li>
+  <li>Fifth Avenue / 53rd Street -&gt; 7,684,091</li>
+  <li>Seventh Avenue -&gt; 5,508,778</li>
+  <li>50th Street -&gt; 6,902,595</li>
+  <li>Total -&gt; 133,059,562</li>
+</ul>
+
+<p>Even if we account for the fact that several of the stations on the IND Queens Boulevard Line service other trains, it would still clearly service more people than the BMT Astoria Line. The MTA has analyzed the different train lines and is currently implementing CBTC on the IND Queens Boulevard Line.</p>
+
+<p>CBTC has already been implemented on two lines, the IRT Flushing Line and the BMT Canarsie Line. This is because these are the only two lines that only host a single service and they do not share operating trackage with other lines or services. The new challenge becomes implemented CBTC on a line that carries trains that will also run on ABS lines.</p>
+:ET

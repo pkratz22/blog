@@ -1,0 +1,1 @@
+This is a Jekyll static blog hosted by GitHub Pages.

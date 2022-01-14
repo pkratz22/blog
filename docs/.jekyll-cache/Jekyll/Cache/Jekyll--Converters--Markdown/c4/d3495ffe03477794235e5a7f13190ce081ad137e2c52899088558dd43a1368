@@ -1,0 +1,96 @@
+I"k<p>Astoria currently has two major train lines that run through it:</p>
+<ul>
+  <li>The IND Queens Boulevard Line</li>
+  <li>The BMT Astoria Line</li>
+</ul>
+
+<p>An improvement that would provide a large benefit to Astorians is the implementation of CBTC on these two lines.</p>
+
+<h2 id="what-is-cbtc">What is CBTC</h2>
+<p>Communications-based train control, or CBTC, is a railway signaling system that uses telecommuniciations to provide a more accurate location of the train compared to the automatic block signaling, or ABS, system currently used. The ABS system divides the track into a series of blocks and the signaling system could detect whether blocks are occupied or available and automatically determine whether the train can proceed to the future blocks. CBTC is a continuous system, so it can detect train positions more accurately, reducing headways and delays, providing more accurate arrival time estimates, and increasing safety.</p>
+
+<h2 id="prioritizing-cbtc">Prioritizing CBTC</h2>
+<p>When discussing improvements, it makes sense to consider improving entire lines together. This will then need to be further broken down by station, track lines, rolling stock, etc.</p>
+
+<p>For that reason, the following information involves trains that run on either the IND Queens Boulevard Line or the BMT Astoria Line, even if the train does not run in Astoria (generally).</p>
+
+<p>The IND Queens Boulevard Line runs the:</p>
+<ul>
+  <li>E Train</li>
+  <li>F Train</li>
+  <li>F Express Train</li>
+  <li>M Train</li>
+  <li>R Train</li>
+</ul>
+
+<p>The BMT Astoria Line runs the:</p>
+<ul>
+  <li>N Train</li>
+  <li>W Train</li>
+</ul>
+
+<p>Looking at the Subway Weekday % Service Delivered and Subway Weekend % Service Delivered from <a href="https://new.mta.info/document/68221">the December 2021 MTA Board Meeting</a>, we see the following:</p>
+<ul>
+  <li>E -&gt; 92.4% / 92.4%</li>
+  <li>F -&gt; 88.7% / 88.7%</li>
+  <li>M -&gt; 90.0% / 90.0%</li>
+  <li>R -&gt; 89.4% / 89.4%</li>
+  <li>N -&gt; 90.0% / 90.0%</li>
+  <li>W -&gt; 85.5% / NA</li>
+</ul>
+
+<p>Additionally, we can look at the subway weekday and weekend average customer journey time performance, which measures the percentage of customer trips with total travel times within 5 minutes of the scheduled time.</p>
+<ul>
+  <li>E -&gt; 80.7%</li>
+  <li>F -&gt; 82.1%</li>
+  <li>M -&gt; 79.1%</li>
+  <li>R -&gt; 79.4%</li>
+  <li>N -&gt; 79.0%</li>
+  <li>W -&gt; 86.4%</li>
+</ul>
+
+<p>These statistics are not restricted to the BMT Astoria Line and the IND Queens Boulevard Line, and represent percentage of service delivered along the entire routes of the trains.</p>
+
+<p>This gives us a general idea on which trains that use these two lines are slower, but the other factor to consider is usage. If one line has significantly higher usage, it may be of a higher priority. The MTA provides data on annual usage for each station, so let’s look at the stations along these two lines. This data can be found <a href="https://new.mta.info/document/16136">here</a>. It is important to note that some of these stations have other train lines, allowing for transfers, which could lead to the stations having higher numbers than the lines. It is also important to note that some of these stations were undergoing improvements, such as the Astoria Boulevard Station, which led to a massive decrease in ridership.</p>
+
+<p>Here are the BMT Astoria Line stations and annual use (from 2019):</p>
+<ul>
+  <li>Astoria - Ditmars Boulevard -&gt; 5,277,341</li>
+  <li>Astoria Boulevard -&gt; 723,354 (decrease of 82.9% from 2018)</li>
+  <li>30th Avenue -&gt; 5,230,182 (increase of 120.3% from 2018)</li>
+  <li>Broadway -&gt; 3,038,655</li>
+  <li>36th Avenue -&gt; 1,933,812 (increase of 33.7% from 2018)</li>
+  <li>39th Avenue -&gt; 761,816</li>
+  <li>Queensboro Plaza -&gt; 5,018,211</li>
+  <li>Total -&gt; 22,142,869</li>
+</ul>
+
+<p>Here are the IND Queens Boulevard Line stations and annual use (frmo 2019):</p>
+<ul>
+  <li>Jamaica - 179th Street</li>
+  <li>169th Street</li>
+  <li>Parsons Boulevard</li>
+  <li>Sutphin Boulevard</li>
+  <li>Briarwood</li>
+  <li>Kew Gardens - Union Turnpike</li>
+  <li>75th Avenue</li>
+  <li>Forest Hills - 71st Avenue</li>
+  <li>67th Avenue</li>
+  <li>63rd Avenue - Rego Park</li>
+  <li>Woodhaven Boulevard</li>
+  <li>Grand Avenue - Newtown</li>
+  <li>Elmhurst Avenue</li>
+  <li>Jackson Heights - Roosevelt Avenue</li>
+  <li>65th Street</li>
+  <li>Northern Boulevard</li>
+  <li>46th Street</li>
+  <li>Steinway Street</li>
+  <li>36th Street</li>
+  <li>Queens Plaza</li>
+  <li>Court Square - 23rd Street</li>
+  <li>Lexington Avenue - 53rd Street</li>
+  <li>Fifth Avenue / 53rd Street</li>
+  <li>Seventh Avenue</li>
+  <li>50th Street</li>
+</ul>
+:ET
