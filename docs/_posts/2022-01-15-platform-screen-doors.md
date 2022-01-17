@@ -51,7 +51,12 @@ The older rolling stock, which will be the next to get phased out, currently hav
 
 [Recently, the Sofia Metro in Bulgaria implemented VPSDs at multiple stations, demonstrating that this approach is possible.](https://www.railwaypro.com/wp/sofia-metro-benefits-automatic-platform-screen-doors/) The Sofia Metro currently has three varieties of rolling stock: Metrovagonmash 81-717/81-714, Metrovagonmash 81-740/741, and Siemens Inspiro, each with different dimensions, yet the VPSDs have been successful. 
 
+The following is an example of what vertical platform screen doors look like when raised in the Sofia Metro.
+
 ![Image of the Sofia Metro VPSD raised]({{ site.baseurl }}/assets/images/sofia_vpsd_raised.jpg)
+
+The following is an example of what vertical platform screen doors look like when lowered in the Sofia Metro.
+
 ![Image of the Sofia Metro VPSD lowered]({{ site.baseurl }}/assets/images/sofia_vpsd_lowered.jpg)
 
 -----------------------------------------------------------------------------------------------------------------------------------------
