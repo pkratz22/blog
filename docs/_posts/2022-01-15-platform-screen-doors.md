@@ -39,13 +39,14 @@ If cost is a serious concern in building platform doors (and cost is very often 
 Indoor stations should be prioritized in regards to implementing Verticals Platform Screen Doors, or VPSDs. Vertical platform screen doors have one major issue and many benefits. The issue is speed - VPSDs take longer to open and close, which can make a difference during peak hours when headways can be as little as one minute (and that number will only become smaller with the implementation of CBTC). Since VPSDs have to travel the height of the station, which ranges between 7.41 and 8.37 feet, rather than the width of the door, which varies between 4.17 and 4.50 (soon to be 4.83) feet, it naturally takes longer to open and close. However, the benefit is that it would be able to handle the variety of rolling stock. 
 
 Currently, NYC rolling stock can be grouped by rolling stock dimensions and door dimensions and door count:
-Rolling Stock,Length,Width,Height,Platform Height,Door Count (per side),Door Width,Count
-R44 / R46 / R68 / R68A,74.71,10,12.08,3.76,8 (4),4.17,1434
-R62 / R62A,51.04,8.6,11.89,3.65,6 (3),4.17,1139
-R142 / R142A / R188,51.33,8.6,11.89,3.65,6 (3),4.5,1751
-R143 / R160,60.21,9.77,12.13,3.76,8 (4),4.17,1874
-R179,60.5,9.88,11.14,3.73,8 (4),4.17,318
-R211A,60.21,10,12,3.76,8 (4),4.83,0
+|Rolling Stock|Length|Width|Height|Platform Height|Door Count (per side)|Door Width|Count
+|---|---|---|---|---|---|---|---|
+|R44 / R46 / R68 / R68A|74.71|10|12.08|3.76|8 (4)|4.17|1434
+|R62 / R62A|51.04|8.6|11.89|3.65|6 (3)|4.17|1139
+|R142 / R142A / R188|51.33|8.6|11.89|3.65|6 (3)|4.5|1751
+|R143 / R160|60.21|9.77|12.13|3.76|8 (4)|4.17|1874
+|R179|60.5|9.88|11.14|3.73|8 (4)|4.17|318
+|R211A|60.21|10|12|3.76|8 (4)|4.83|0
 
 The older rolling stock, which will be the next to get phased out, currently have a significant number of cars. It would be unrealistically expensive to upgrade all rolling stock to ones that fit the same dimensions (even if we allowed for multiple dimensions, one for the A Division and one for the B Division), in order to use the better Horizontal Platform Screen Doors. For this reason, Vertical Platform Screen Doors should be implemented and future rolling stock should drive towards uniform dimensions, and eventually the NYC Metro would be able to replace the Vertical PSDs with Horizontal PSDs. That upgrade would be costly and should not be considered high priority, but implementing the first wave of VPSDs and PGDs should be seen as a priority for the MTA.
 
