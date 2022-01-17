@@ -39,6 +39,7 @@ If cost is a serious concern in building platform doors (and cost is very often 
 Indoor stations should be prioritized in regards to implementing Verticals Platform Screen Doors, or VPSDs. Vertical platform screen doors have one major issue and many benefits. The issue is speed - VPSDs take longer to open and close, which can make a difference during peak hours when headways can be as little as one minute (and that number will only become smaller with the implementation of CBTC). Since VPSDs have to travel the height of the station, which ranges between 7.41 and 8.37 feet, rather than the width of the door, which varies between 4.17 and 4.50 (soon to be 4.83) feet, it naturally takes longer to open and close. However, the benefit is that it would be able to handle the variety of rolling stock. 
 
 Currently, NYC rolling stock can be grouped by rolling stock dimensions and door dimensions and door count:
+
 |Rolling Stock|Length|Width|Height|Platform Height|Door Count (per side)|Door Width|Count
 |---|---|---|---|---|---|---|---|
 |R44 / R46 / R68 / R68A|74.71|10|12.08|3.76|8 (4)|4.17|1434
