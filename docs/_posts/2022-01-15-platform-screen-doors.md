@@ -61,4 +61,4 @@ The following is an example of what vertical platform screen doors look like whe
 
 ![Image of the Sofia Metro VPSD lowered]({{ site.baseurl }}/assets/images/sofia_vpsd_lowered.jpg)
 
------------------------------------------------------------------------------------------------------------------------------------------
+Clearly, the New York Metro has a lot of room for improvement regarding Platform Screen Doors, which currently do not exist (although it does exist in the AirTrain JFK people mover). The death of Michelle Go is tragic, and we should focus on ensuring these racially motivated attacks, as this appears to have been, do not happen (along with other attacks too). We should also examine what else can be done to make the NYC Metro safer. With Vertical Platform Screen Doors at Times Square station, this attack would have still hurt Michelle Go, but she would most likely still be alive. Platform Screen Doors, Platform Edge Doors, and Platform Gate Doors increase safety and provide additional benefits, and should be an area of priority for the NYC MTA.
