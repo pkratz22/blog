@@ -1,14 +1,19 @@
 Blog topics:
-1. Upgrading train signaling - https://en.wikipedia.org/wiki/Signaling_of_the_New_York_City_Subway#Block_signaling
-							   https://railsystem.net/communications-based-train-control-cbtc/
-2. Train automation - https://en.wikipedia.org/wiki/List_of_automated_train_systems#Grade-of-Automation_3_(GoA3)
-3. Removing BQE
-4. Removing peaker plants 
-5. Removing Astoria Costco + Vordonia Towers + Insight Equipment + 10-35 Broadway + Remove parking at Hallet Cove Beach to create a continuous greenspace between Queensbridge Park + Rainey Park + Socrates Sculpture Park
-6. Expanding trains to reach airports
-7. Pedestrianize Newtown avenue between 30th avenue and 31st street
-8. Steinway street redesign with tram line, bike lanes, one vehicle lane restricted from through traffic and with loading zones, plus grass and street seating
-9. Updating rolling stock:
+1. 37th Street - add pinchpoint + midpoint pedestrian crossings + trees near alleys to give cars leaving alleys better view of street
+	https://nacto.org/publication/urban-street-design-guide/street-design-elements/curb-extensions/pinchpoint/
+2. Proposal:
+	A. DeKalb de-interlining
+	B. Extending Astoria Line to Con Edison (20th avenue) (potential for extending to LGA)
+	C. Build train yard at Con Edison parking lot
+	D. Move R train from QBL line to Astoria Line
+3. De-interlining at DeKalb
+2. Removing BQE
+3. Removing peaker plants 
+4. Removing Astoria Costco + Vordonia Towers + Insight Equipment + 10-35 Broadway + Remove parking at Hallet Cove Beach to create a continuous greenspace between Queensbridge Park + Rainey Park + Socrates Sculpture Park
+5. Expanding trains to reach airports
+6. Pedestrianize Newtown avenue between 30th avenue and 31st street
+7. Steinway street redesign with tram line, bike lanes, one vehicle lane restricted from through traffic and with loading zones, plus grass and street seating
+8. Updating rolling stock:
 	N/W:
 		176 R46s --> R211s
 		72 R68s  --> NA
@@ -18,17 +23,19 @@ Blog topics:
 		8 R68s
 	R:
 		310 R160s --> CBTC capable, need to finish adding to all cars
-10. Green roofs / increasing greenspace
-11. Widening sidewalks
-12. More dedicated buslanes + bikelanes
-13. Storm water problem areas in Astoria - 14th street pedestrianization + bioswales
+9. Green roofs / increasing greenspace
+10. Widening sidewalks
+11. More dedicated buslanes + bikelanes
+12. Storm water problem areas in Astoria - 14th street pedestrianization + bioswales
 	Resource: https://experience.arcgis.com/experience/7c260f80c5d44d948d45051d7a2d6d77/page/Page-1/?views=View-2
-14. Triboro train line expansion from Hochul state of the state address
-15. Read about Dutch Kills Loop + Newtown Creek - https://www.buildingcongress.com/uploads/Building%20the%20Future%20of%20New%20York%20-%20Parks%20and%20Open%20Space%20v5%20digital%20distro-1.pdf
-16. Upzoning the R4B district in Astoria to R6
-17. Upzoning the R5B district in Astoria on 37th street between 28th avenue and Astoria boulevard to R6B
-18. Pedestrianizing Center Boulevard a la Shore Boulevard (this is Long Island City, not Astoria, so lower priority)
+13. Triboro train line expansion from Hochul state of the state address
+14. Read about Dutch Kills Loop + Newtown Creek - https://www.buildingcongress.com/uploads/Building%20the%20Future%20of%20New%20York%20-%20Parks%20and%20Open%20Space%20v5%20digital%20distro-1.pdf
+15. Upzoning the R4B district in Astoria to R6
+16. Upzoning the R5B district in Astoria on 37th street between 28th avenue and Astoria boulevard to R6B
+17. Pedestrianizing Center Boulevard a la Shore Boulevard (this is Long Island City, not Astoria, so lower priority)
 
-19. Get the book improving urban waterfront promenade and see if anything is applicable
+18. Get the book improving urban waterfront promenade and see if anything is applicable
+19. Get the book The High Cost of Free Parking and see what it discusses
 20. Something about retractable bollards
 21. Loop train lines
+22. Book - there are no accidents
