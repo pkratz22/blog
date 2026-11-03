@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Modular LaTeX Resume"
-date: 2021-09-11 22:05:31 -0400
+date: 2026-11-03 10:56:02 -0500
 categories: professional
 ---
 The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.
@@ -40,23 +40,25 @@ The class file handles the following:
 \RequirePackage{geometry}
 \geometry{
     paper=letterpaper,  % paper : letterpaper (US) or a4paper (uk)
-    left      = 1in,        % Inner margin % 1in is standard
-    right     = 1in,          % Outer margin % 1in is standard
-    top       = 1in,         % Top margin % 1in is standard
-    bottom    = 1in,         % Bottom margin %1in is standard
+    left      = 1in,    % Inner margin  % 1in is standard
+    right     = 1in,    % Outer margin  % 1in is standard
+    top       = 1in,    % Top margin    % 1in is standard
+    bottom    = 1in,    % Bottom margin % 1in is standard
     marginpar = 0in,
- %   showframe,          % Uncomment to show how the type block is set on the page
+ %   showframe,         % Uncomment to show how the type block is set on the page
 }
 
 % Name
 \newcommand{\name}[1]{
+  \savebox0{\Large{#1}}
   \centerline{\Large{#1}}
 }
 
 % Contact
-\newcommand{\contact}[2]{
+\newcommand{\contact}[3]{
 \centerline{
-    #1 $\mid$ #2
+    \savebox1{#1}
+    \makebox[\wd1][r]{#1} $\mid$ \makebox[\wd0]{#2} $\mid$ \makebox[\wd1][l]{#3}
     }
 }
 
@@ -66,12 +68,12 @@ The class file handles the following:
 }
 
 % Custom section
-\titleformat{\section}         % Customise the \section command
+\titleformat{\section}            % Customise the \section command
   {\bfseries\scshape\raggedright} % Make the \section headers large (\Large),
-                               % small capitals (\scshape) and left aligned (\raggedright)
-  {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
-  {}                           % Can be used to insert code before the heading
-  [\titlerule]                 % Inserts a horizontal line after the heading
+                                  % small capitals (\scshape) and left aligned (\raggedright)
+  {}{0em}                         % Can be used to give a prefix to all sections, like 'Section ...'
+  {}                              % Can be used to insert code before the heading
+  [\titlerule]                    % Inserts a horizontal line after the heading
 
 \titlespacing{\section}{0em}{0em}{2pt} % left spacing, before spacing, after spacing
 ```
@@ -96,7 +98,7 @@ The LaTeX file handles the following:
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{times}
+\usepackage{newpxtext}
 \usepackage{enumitem}
 \usepackage{microtype}
 \usepackage{hyperref}
@@ -114,7 +116,7 @@ The LaTeX file handles the following:
 % Contact
 % *****************************************
 \name{$contact.name$}
-\contact{$contact.email$}{$contact.phone$}
+\contact{$contact.email$}{$contact.phone$}{$contact.location$}
 
 % *****************************************
 % WORK EXPERIENCE
@@ -135,7 +137,7 @@ $endfor$
 % *****************************************
 % INTERNSHIPS
 % *****************************************
-\section{Internships}
+$if(internship)$ \section{Internships} $endif$
 $for(internship)$
     \noindent\textbf{$internship.company$}\hfill{$internship.city$}\break\textit{$internship.title$}\hfill{$internship.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
@@ -149,9 +151,9 @@ $for(internship)$
 $endfor$
 
 % *****************************************
-% COMPETITIONS / PROJECTS
+% COMPETITIONS / PROJECTS / ACTIVITIES
 % *****************************************
-$if(project)$ \section{Competitions / Projects} $endif$
+$if(project)$ \section{Competitions} $endif$
 $for(project)$
     \noindent\textbf{$project.title$ $if(project.descriptor)$ \unskip, \textit{$project.descriptor$} $endif$}\quad \textit{$project.location$} \hfill {$project.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
@@ -164,12 +166,9 @@ $for(project)$
     \bigskip
 $endfor$
 
-% *****************************************
-% LEADERSHIP / ACTIVITIES
-% *****************************************
-\section{Leadership / Activities}
+$if(activity)$ \section{Activities} $endif$
 $for(activity)$
-    \noindent\textbf{$activity.group$} \hfill {$activity.location$}\break\textit{$activity.title$} \hfill {$activity.years$}
+    \noindent\textbf{$activity.title$ $if(activity.group)$ \unskip, \textit{$activity.group$} $endif$}\quad \textit{$activity.location$} \hfill {$activity.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
         $if(activity.achievement1)$ \item \raggedright{$activity.achievement1$} $endif$
         $if(activity.achievement2)$ \item \raggedright{$activity.achievement2$} $endif$
@@ -181,26 +180,12 @@ $for(activity)$
 $endfor$
 
 % *****************************************
-% RELEVANT COURSEWORK
-% *****************************************
-$if(coursework)$ \section{Relevant Coursework} $endif$
-$for(coursework)$
-    \noindent\textbf{$coursework.title$}
-    \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
-        $if(coursework.description1)$ \item \raggedright{$coursework.description1$} $endif$
-        $if(coursework.description2)$ \item \raggedright{$coursework.description2$} $endif$
-        $if(coursework.description3)$ \item \raggedright{$coursework.description3$} $endif$
-    \end{itemize}
-    \bigskip
-$endfor$
-
-% *****************************************
 % EDUCATION
 % *****************************************
 \section{Education}
 $for(education)$
     \noindent\textbf{$education.university$}\hfill{$education.city$}\break
-    \textit{$education.degree$}\hfill{$if(education.GPA)$ GPA: {$education.GPA$} $endif$}\hfill{$if(education.honors)$ Honors: \textit{$education.honors$} $endif$}\hfill{$education.year$}\break
+    \textit{$education.degree$}\hfill{$if(education.honors)$ Honors: \textit{$education.honors$} $endif$}\hfill{$education.year$}\break
     {$if(education.majors)$ Majors: {$education.majors$} $endif$}
     {$if(education.minors)$ \split{} Minors: {$education.minors$} $endif$}
     \par
@@ -226,17 +211,18 @@ The makefile looks as follows:
 #----------------------
 TEMPLATE=cv-template
 PROJECT=Peter_Kratz_Resume
-YAML=cv-data
+YAML=cv-data-kiro
 TEX=pdflatex
 BUILDTEX=$(TEX) $(PROJECT).tex
 
 all:
-	pandoc $(YAML).yaml --template $(TEMPLATE).tex -o $(PROJECT).tex
+	pandoc $(YAML).yml --template $(TEMPLATE).tex -o $(PROJECT).tex
 	$(BUILDTEX)
 	$(BUILDTEX)
 	$(BUILDTEX)
 	rm $(PROJECT).aux
 	rm $(PROJECT).log
+	rm $(PROJECT).out
 	open $(PROJECT).pdf
 
 clean-all:

@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Modular LaTeX Resume | The Peter Kratz Blog</title>
-<meta name="generator" content="Jekyll v4.2.0" />
+<meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Modular LaTeX Resume" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice." />
 <meta property="og:description" content="The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice." />
-<link rel="canonical" href="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html" />
-<meta property="og:url" content="pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html" />
+<link rel="canonical" href="pkratz22.github.io/blog/professional/2026/11/03/modular_resume.html" />
+<meta property="og:url" content="pkratz22.github.io/blog/professional/2026/11/03/modular_resume.html" />
 <meta property="og:site_name" content="The Peter Kratz Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-09-11T22:05:31-04:00" />
+<meta property="article:published_time" content="2026-11-03T10:56:02-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Modular LaTeX Resume" />
 <script type="application/ld+json">
-{"headline":"Modular LaTeX Resume","dateModified":"2021-09-11T22:05:31-04:00","datePublished":"2021-09-11T22:05:31-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html"},"description":"The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.","url":"pkratz22.github.io/blog/professional/2021/09/11/modular_resume.html","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"pkratz22.github.io/blog/professional/2026/11/03/modular_resume.html"},"url":"pkratz22.github.io/blog/professional/2026/11/03/modular_resume.html","description":"The first blog post will discuss a recent mini-project I completed - transforming my resume into a modular resume, in which the design and content were separated as is best practice.","@type":"BlogPosting","headline":"Modular LaTeX Resume","dateModified":"2026-11-03T10:56:02-05:00","datePublished":"2026-11-03T10:56:02-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="pkratz22.github.io/blog/feed.xml" title="The Peter Kratz Blog" /></head>
 <body><header class="site-header" role="banner">
@@ -42,7 +42,7 @@
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Modular LaTeX Resume</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2021-09-11T22:05:31-04:00" itemprop="datePublished">Sep 11, 2021
+      <time class="dt-published" datetime="2026-11-03T10:56:02-05:00" itemprop="datePublished">Nov 3, 2026
       </time></p>
   </header>
 
@@ -88,23 +88,25 @@
 \RequirePackage{geometry}
 \geometry{
     paper=letterpaper,  % paper : letterpaper (US) or a4paper (uk)
-    left      = 1in,        % Inner margin % 1in is standard
-    right     = 1in,          % Outer margin % 1in is standard
-    top       = 1in,         % Top margin % 1in is standard
-    bottom    = 1in,         % Bottom margin %1in is standard
+    left      = 1in,    % Inner margin  % 1in is standard
+    right     = 1in,    % Outer margin  % 1in is standard
+    top       = 1in,    % Top margin    % 1in is standard
+    bottom    = 1in,    % Bottom margin % 1in is standard
     marginpar = 0in,
- %   showframe,          % Uncomment to show how the type block is set on the page
+ %   showframe,         % Uncomment to show how the type block is set on the page
 }
 
 % Name
 \newcommand{\name}[1]{
+  \savebox0{\Large{#1}}
   \centerline{\Large{#1}}
 }
 
 % Contact
-\newcommand{\contact}[2]{
+\newcommand{\contact}[3]{
 \centerline{
-    #1 $\mid$ #2
+    \savebox1{#1}
+    \makebox[\wd1][r]{#1} $\mid$ \makebox[\wd0]{#2} $\mid$ \makebox[\wd1][l]{#3}
     }
 }
 
@@ -114,12 +116,12 @@
 }
 
 % Custom section
-\titleformat{\section}         % Customise the \section command
+\titleformat{\section}            % Customise the \section command
   {\bfseries\scshape\raggedright} % Make the \section headers large (\Large),
-                               % small capitals (\scshape) and left aligned (\raggedright)
-  {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
-  {}                           % Can be used to insert code before the heading
-  [\titlerule]                 % Inserts a horizontal line after the heading
+                                  % small capitals (\scshape) and left aligned (\raggedright)
+  {}{0em}                         % Can be used to give a prefix to all sections, like 'Section ...'
+  {}                              % Can be used to insert code before the heading
+  [\titlerule]                    % Inserts a horizontal line after the heading
 
 \titlespacing{\section}{0em}{0em}{2pt} % left spacing, before spacing, after spacing
 </code></pre></div></div>
@@ -151,7 +153,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{times}
+\usepackage{newpxtext}
 \usepackage{enumitem}
 \usepackage{microtype}
 \usepackage{hyperref}
@@ -169,7 +171,7 @@
 % Contact
 % *****************************************
 \name{$contact.name$}
-\contact{$contact.email$}{$contact.phone$}
+\contact{$contact.email$}{$contact.phone$}{$contact.location$}
 
 % *****************************************
 % WORK EXPERIENCE
@@ -190,7 +192,7 @@ $endfor$
 % *****************************************
 % INTERNSHIPS
 % *****************************************
-\section{Internships}
+$if(internship)$ \section{Internships} $endif$
 $for(internship)$
     \noindent\textbf{$internship.company$}\hfill{$internship.city$}\break\textit{$internship.title$}\hfill{$internship.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
@@ -204,9 +206,9 @@ $for(internship)$
 $endfor$
 
 % *****************************************
-% COMPETITIONS / PROJECTS
+% COMPETITIONS / PROJECTS / ACTIVITIES
 % *****************************************
-$if(project)$ \section{Competitions / Projects} $endif$
+$if(project)$ \section{Competitions} $endif$
 $for(project)$
     \noindent\textbf{$project.title$ $if(project.descriptor)$ \unskip, \textit{$project.descriptor$} $endif$}\quad \textit{$project.location$} \hfill {$project.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
@@ -219,12 +221,9 @@ $for(project)$
     \bigskip
 $endfor$
 
-% *****************************************
-% LEADERSHIP / ACTIVITIES
-% *****************************************
-\section{Leadership / Activities}
+$if(activity)$ \section{Activities} $endif$
 $for(activity)$
-    \noindent\textbf{$activity.group$} \hfill {$activity.location$}\break\textit{$activity.title$} \hfill {$activity.years$}
+    \noindent\textbf{$activity.title$ $if(activity.group)$ \unskip, \textit{$activity.group$} $endif$}\quad \textit{$activity.location$} \hfill {$activity.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
         $if(activity.achievement1)$ \item \raggedright{$activity.achievement1$} $endif$
         $if(activity.achievement2)$ \item \raggedright{$activity.achievement2$} $endif$
@@ -236,26 +235,12 @@ $for(activity)$
 $endfor$
 
 % *****************************************
-% RELEVANT COURSEWORK
-% *****************************************
-$if(coursework)$ \section{Relevant Coursework} $endif$
-$for(coursework)$
-    \noindent\textbf{$coursework.title$}
-    \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
-        $if(coursework.description1)$ \item \raggedright{$coursework.description1$} $endif$
-        $if(coursework.description2)$ \item \raggedright{$coursework.description2$} $endif$
-        $if(coursework.description3)$ \item \raggedright{$coursework.description3$} $endif$
-    \end{itemize}
-    \bigskip
-$endfor$
-
-% *****************************************
 % EDUCATION
 % *****************************************
 \section{Education}
 $for(education)$
     \noindent\textbf{$education.university$}\hfill{$education.city$}\break
-    \textit{$education.degree$}\hfill{$if(education.GPA)$ GPA: {$education.GPA$} $endif$}\hfill{$if(education.honors)$ Honors: \textit{$education.honors$} $endif$}\hfill{$education.year$}\break
+    \textit{$education.degree$}\hfill{$if(education.honors)$ Honors: \textit{$education.honors$} $endif$}\hfill{$education.year$}\break
     {$if(education.majors)$ Majors: {$education.majors$} $endif$}
     {$if(education.minors)$ \split{} Minors: {$education.minors$} $endif$}
     \par
@@ -280,17 +265,18 @@ $endfor$
 #----------------------
 TEMPLATE=cv-template
 PROJECT=Peter_Kratz_Resume
-YAML=cv-data
+YAML=cv-data-kiro
 TEX=pdflatex
 BUILDTEX=$(TEX) $(PROJECT).tex
 
 all:
-	pandoc $(YAML).yaml --template $(TEMPLATE).tex -o $(PROJECT).tex
+	pandoc $(YAML).yml --template $(TEMPLATE).tex -o $(PROJECT).tex
 	$(BUILDTEX)
 	$(BUILDTEX)
 	$(BUILDTEX)
 	rm $(PROJECT).aux
 	rm $(PROJECT).log
+	rm $(PROJECT).out
 	open $(PROJECT).pdf
 
 clean-all:
@@ -404,7 +390,7 @@ skills:
   <li><a href="https://pandoc.org/installing.html">Pandoc</a></li>
 </ul>
 
-  </div><a class="u-url" href="/blog/professional/2021/09/11/modular_resume.html" hidden></a>
+  </div><a class="u-url" href="/blog/professional/2026/11/03/modular_resume.html" hidden></a>
 </article>
 
       </div>

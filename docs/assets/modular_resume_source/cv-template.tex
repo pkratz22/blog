@@ -2,7 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{times}
+\usepackage{newpxtext}
 \usepackage{enumitem}
 \usepackage{microtype}
 \usepackage{hyperref}
@@ -20,7 +20,7 @@
 % Contact
 % *****************************************
 \name{$contact.name$}
-\contact{$contact.email$}{$contact.phone$}
+\contact{$contact.email$}{$contact.phone$}{$contact.location$}
 
 % *****************************************
 % WORK EXPERIENCE
@@ -41,7 +41,7 @@ $endfor$
 % *****************************************
 % INTERNSHIPS
 % *****************************************
-\section{Internships}
+$if(internship)$ \section{Internships} $endif$
 $for(internship)$
     \noindent\textbf{$internship.company$}\hfill{$internship.city$}\break\textit{$internship.title$}\hfill{$internship.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
@@ -55,9 +55,9 @@ $for(internship)$
 $endfor$
 
 % *****************************************
-% COMPETITIONS / PROJECTS
+% COMPETITIONS / PROJECTS / ACTIVITIES
 % *****************************************
-$if(project)$ \section{Competitions / Projects} $endif$
+$if(project)$ \section{Competitions} $endif$
 $for(project)$
     \noindent\textbf{$project.title$ $if(project.descriptor)$ \unskip, \textit{$project.descriptor$} $endif$}\quad \textit{$project.location$} \hfill {$project.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
@@ -70,12 +70,9 @@ $for(project)$
     \bigskip
 $endfor$
 
-% *****************************************
-% LEADERSHIP / ACTIVITIES
-% *****************************************
-\section{Leadership / Activities}
+$if(activity)$ \section{Activities} $endif$
 $for(activity)$
-    \noindent\textbf{$activity.group$} \hfill {$activity.location$}\break\textit{$activity.title$} \hfill {$activity.years$}
+    \noindent\textbf{$activity.title$ $if(activity.group)$ \unskip, \textit{$activity.group$} $endif$}\quad \textit{$activity.location$} \hfill {$activity.years$}
     \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
         $if(activity.achievement1)$ \item \raggedright{$activity.achievement1$} $endif$
         $if(activity.achievement2)$ \item \raggedright{$activity.achievement2$} $endif$
@@ -87,26 +84,12 @@ $for(activity)$
 $endfor$
 
 % *****************************************
-% RELEVANT COURSEWORK
-% *****************************************
-$if(coursework)$ \section{Relevant Coursework} $endif$
-$for(coursework)$
-    \noindent\textbf{$coursework.title$}
-    \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
-        $if(coursework.description1)$ \item \raggedright{$coursework.description1$} $endif$
-        $if(coursework.description2)$ \item \raggedright{$coursework.description2$} $endif$
-        $if(coursework.description3)$ \item \raggedright{$coursework.description3$} $endif$
-    \end{itemize}
-    \bigskip
-$endfor$
-
-% *****************************************
 % EDUCATION
 % *****************************************
 \section{Education}
 $for(education)$
     \noindent\textbf{$education.university$}\hfill{$education.city$}\break
-    \textit{$education.degree$}\hfill{$if(education.GPA)$ GPA: {$education.GPA$} $endif$}\hfill{$if(education.honors)$ Honors: \textit{$education.honors$} $endif$}\hfill{$education.year$}\break
+    \textit{$education.degree$}\hfill{$if(education.honors)$ Honors: \textit{$education.honors$} $endif$}\hfill{$education.year$}\break
     {$if(education.majors)$ Majors: {$education.majors$} $endif$}
     {$if(education.minors)$ \split{} Minors: {$education.minors$} $endif$}
     \par

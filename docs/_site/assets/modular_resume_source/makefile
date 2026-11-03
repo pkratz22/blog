@@ -3,7 +3,7 @@
 #----------------------
 TEMPLATE=cv-template
 PROJECT=Peter_Kratz_Resume
-YAML=cv-data
+YAML=cv-data-kiro
 TEX=pdflatex
 BUILDTEX=$(TEX) $(PROJECT).tex
 
