@@ -235,89 +235,71 @@ clean:
 Then, the content is added to the YAML file:
 ```
 ---
-version: 2020-09-14
+version: 2025-06-10
 
 meta:
   title: Peter Kratz Resume
   author: Peter Kratz
-  date: 2021-09-14
+  date: 2025-06-10
   language: en-US
 
 contact:
   name: Peter Kratz
   email: pkratz22@gmail.com
   phone: 1-347-456-9431
+  location: New York, NY
 
 education:
   - year: May 2020
     university: Villanova University
     degree: Bachelor of Business Administration
-    GPA: 3.55/4.0
     honors: Cum Laude
     city: Villanova, PA
     majors: Business Analytics, Management Information Systems
     minors: Computer Science
 
 work:
+  - company: InformedDNA
+    title: Data Engineer
+    city: Remote
+    years: March 2025 - Present
+    achievement1: Designed and deployed production AWS serverless pipeline (Step Functions, Lambda, CDK) orchestrating claims processing, R-based report generation, and automated QuickSight dashboard refreshes, reducing client report turnaround from 15+ minutes of manual engineering effort to under 1 minute upon file receipt.
+    achievement2: Built multi-Lambda SAM application automating patient enrollment and eligibility synchronization between Formstack, S3, and Zoho CRM, processing 100K+ records daily with structured logging and error handling, eliminating 2 hours of manual work per week.
+    achievement3: Developed ETL pipelines standardizing 200+ claims files (pharmacy, medical, and professional) across 15+ client formats into unified schema, with automated S3 archival, deduplication, and data quality flagging, eliminating manual pre-processing and ensuring consistent downstream data availability.
+    achievement4: Created AWS data quality toolkit auditing Athena views for staleness, profiling query performance across 30+ databases and 300+ tables/views, and tracing cross-service references (QuickSight, Glue, Lambda) to safely decommission deprecated resources.
   - company: Coriell Life Sciences
-    title: Operations Associate
+    title: Senior Data Analyst
     city: Philadelphia, PA
-    years: October 2020 - Present
-    achievement1: Automated program processes, primarily using Python, decreasing time spent by 90%.
-    achievement2: Implemented 30+ cross-departmental data quality control reports, checking for completeness, validity, and consistency using both Zoho CRM and Python.
-    achievement3: Established client-facing dashboards, saving two hours per week during preparation of client presentations.
-    achievement4: Redesigned patient-facing medication action plans using HTML and CSS with Apache FreeMarker templates.
-    achievement5: Conducted change point detection using R on enrollment to gauge effectiveness of outreach by vendor and presented findings to executive team, giving company leverage during re-contracting, saving $10000.
-
-internship:
-  - company: NDH Capital Corporation
-    title: Business Development Intern
-    city: New York, NY
-    years: June 2018 - August 2018, June 2019 - August 2019
-    achievement1: Analyzed financial statements to evaluate client liquidity, asset management, leverage, and profitability ratios, depending on client and industry.
-    achievement2: Presented findings in clear, concise reports to the president of NDH Capital, creating insight into structuring of transactions with clients.
-
-project:
-  - title: Deloitte Technology Case Competition
-    descriptor: Winner
-    location: Villanova University
-    years: February 2019 - March 2019
-    achievement1: Proposed Go-to-Market strategy involving product differentiation, company restructuring, partnership selection, and target audience leading to an estimated 10% return on investment and 20% gross margin.
-    achievement2: Developed roll-out plan with specific 30, 90, and 180 day targets.
-  - title: Linda Creed Breast Cancer Foundation
-    location: Villanova University
-    years: October 2018 - December 2018
-    achievement1: Extracted client data from GiftMaker CRM, cleaned data, and uploaded to Salesforce, increasing data organization and streamlining processes, reducing time spent in CRM by approximately 30%.
-    achievement2: Built 5 reports in Salesforce allowing client to analyze donor, donation, and contact activity.
-  - title: Principles of Database Systems
-    location: Villanova University
-    years: October 2018 - December 2018
-    achievement1: Designed Entity-Relationship Diagrams and Produced relational database with four tables using SQL and Oracle Database that allowed users to find information about cultural attractions by city.
-  - title: Competitive Effectiveness
-    location: Villanova University
-    years: October 2017 - December 2017
-    achievement1: Developed product packaging, pricing, distribution, and promotional strategies for a new BENGAY product line to sales by a calculated 7%.
-    achievement2: Created promotional campaign strategy and proposed shift in target audience based on market research and demographic trends, leading to an estimated increase in brand relevance of 20%.
-
-activity:
-  - title: Treasurer
-    group: Villanova Curling
-    location: Villanova, PA
-    years: August 2018 - May 2020
-    achievement1: Fundraised over $700.00, allowing the organization to minimize dues while funding team expenses.
+    years: March 2022 - March 2025
+    achievement1: Built composite pharmacogenomic risk scoring model weighting 6 clinical factors to rank 17K+ members into deciles across 5 groups, optimizing program enrollment targeting for 2 clients.
+    achievement2: Evaluated clinical program ROI by applying propensity score matching (MatchIt) to identify matched control groups, then running difference-in-differences and paired t-test models to compare healthcare costs and utilization across staggered treatment timings.
+    achievement3: Developed simulation-based cost savings projection tool sampling from 1M+ historical records with demographic stratification, enrollment ramp-up schedules, and savings decay modeling, enabling prospective clients to assess program viability for their population before committing to full claims data transfer.
+    achievement4: Built quarterly business reporting CLI with automated CRM/database merging, SQL generation, mismatch detection, and property-based testing to produce identified and deidentified cohort reports across 20+ client accounts.
+  - company: Coriell Life Sciences
+    title: Data Analyst
+    city: Philadelphia, PA
+    years: October 2020 - March 2022
+    achievement1: Forecasted enrollment using changepoint detection (PELT) to isolate steady-state periods, then compared ETS, ARIMA, and Holt-Winters models with automatic quarterly fallback when monthly MAPE exceeded 30%, producing 12-month forecasts with confidence intervals.
+    achievement2: Automated monthly billing reconciliation across multiple clients by pulling CRM data via API and applying client-specific business rules, eliminating manual CRM lookups per client and reducing risk of invoicing errors.
+    achievement3: Designed outreach list generation pipelines combining S3 eligibility data with CRM enrollment status, applying household deduplication, minor filtering, and claims filtering to produce targeted mailing, email, and phone lists across 5+ clients on repeatable monthly cadence.
 
 skills:
-  - type: Programming Languages
-    skill1: Python
-    skill2: R
+  - type: Languages & Tools
+    skill1: Python (pandas, boto3, requests)
+    skill2: R (tidyverse)
     skill3: SQL
-  - type: Web Development
-    skill1: HTML
-    skill2: CSS
-    skill3: Javascript
-  - type: CRM Systems
-    skill1: Zoho CRM
-    skill2: Salesforce CRM
+    skill4: Git
+  - type: Analytics & Visualization
+    skill1: QuickSight
+    skill2: R (ggplot2, R Markdown)
+  - type: AWS
+    skill1: Athena
+    skill2: CDK
+    skill3: Glue
+    skill4: Lambda
+    skill5: S3
+    skill6: SAM
+    skill7: Step Functions
 ---
 ```
 
